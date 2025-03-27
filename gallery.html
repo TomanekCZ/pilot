@@ -35,6 +35,31 @@
   
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
+
+  <style>
+    /* Hamburger menu icon styles */
+    .mobile-menu-toggle span {
+      display: block;
+      width: 32px;
+      height: 2px;
+      background-color: white;
+      margin: 6px 0;
+      transition: all 0.3s ease;
+    }
+
+    /* Animation for hamburger to X */
+    .mobile-menu-toggle[aria-expanded="true"] span:first-child {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .mobile-menu-toggle[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-menu-toggle[aria-expanded="true"] span:last-child {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+  </style>
 </head>
 <body class="antialiased bg-slate-50">
   <!-- Header -->
@@ -47,9 +72,9 @@
         
         <button class="lg:hidden mobile-menu-toggle focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
           <div class="space-y-2">
-            <span class="block w-8 h-0.5 bg-white"></span>
-            <span class="block w-8 h-0.5 bg-white"></span>
-            <span class="block w-8 h-0.5 bg-white"></span>
+            <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
+            <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
+            <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
           </div>
         </button>
         
