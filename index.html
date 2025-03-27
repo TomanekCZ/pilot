@@ -32,28 +32,39 @@
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/light-theme.css">
+  <link rel="stylesheet" href="css/mobile-menu.css">
+  
+  <!-- Add Alpine.js for reliable menu handling -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
 </head>
-<body class="antialiased">
+<body class="antialiased" x-data="{ isOpen: false }">
   <!-- Header -->
-  <header id="header" class="fixed w-full bg-slate-900 z-50 shadow-lg">
-    <div class="container mx-auto px-4 py-4">
-      <div class="flex items-center justify-between lg:justify-center relative">
-        <a href="index.html" class="logo transition-transform hover:scale-105 duration-300 lg:absolute lg:left-4">
-          <img src="images/new-logo-white.svg" alt="C10D s.r.o. logo" id="header-logo" class="h-10 w-auto" loading="lazy">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+          <img src="images/new-logo-white.svg" alt="C10D" class="h-8">
         </a>
         
-        <button class="lg:hidden mobile-menu-toggle focus:outline-none" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
-          <div class="space-y-2">
-            <span class="block w-8 h-0.5 bg-white"></span>
-            <span class="block w-8 h-0.5 bg-white"></span>
-            <span class="block w-8 h-0.5 bg-white"></span>
-          </div>
+        <!-- Hamburger Menu Button -->
+        <button 
+          type="button"
+          class="mobile-menu-btn lg:hidden"
+          @click="isOpen = !isOpen"
+          :aria-expanded="isOpen"
+          aria-controls="mobile-menu"
+          aria-label="Menu">
+          <span class="bg-white"></span>
+          <span class="bg-white"></span>
+          <span class="bg-white"></span>
         </button>
-        
-        <nav class="hidden lg:block" id="main-nav">
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center justify-center flex-1">
           <ul class="flex space-x-8">
             <li><a href="#hero" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.home">Domů</a></li>
             <li><a href="#about" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.about">O nás</a></li>
@@ -67,9 +78,10 @@
           </ul>
         </nav>
         
-        <div class="hidden lg:block lg:absolute lg:right-4">
+        <!-- Language Switcher -->
+        <div class="hidden lg:block w-[200px] text-right">
           <div class="relative group">
-            <button class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors">
+            <button class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors ml-auto">
               <img class="w-5 h-5" src="images/flags/cs.svg" alt="Čeština">
               <span>CZ</span>
               <i class="fas fa-chevron-down text-xs ml-1"></i>
@@ -96,25 +108,53 @@
     </div>
   </header>
 
-  <!-- Mobile Menu (Hidden by default) -->
-  <div class="lg:hidden fixed inset-0 bg-slate-900/95 backdrop-blur-sm z-40 hidden" id="mobile-menu">
-    <div class="container mx-auto px-4 py-16">
-      <nav class="flex flex-col items-center space-y-6">
-        <a href="#hero" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.home">Domů</a>
-        <a href="#about" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.about">O nás</a>
-        <a href="#services" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.services">Služby</a>
-        <a href="#technologies" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.technologies">Technologie</a>
-        <a href="#certifications" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.certifications">Certifikace</a>
-        <a href="#projects" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.euProjects">Dotace EU</a>
-        <a href="#gallery" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.gallery">Galerie</a>
-        <a href="#career" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.career">Kariéra</a>
-        <a href="#contact" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.contact">Kontakt</a>
+  <!-- Mobile Menu -->
+  <div 
+    id="mobile-menu" 
+    class="mobile-menu"
+    :class="{ 'show': isOpen }"
+    @click.away="isOpen = false"
+    x-show="isOpen"
+    x-transition.opacity
+    x-cloak>
+    <div class="container">
+      <!-- Logo -->
+      <a href="#" class="flex items-center mb-6">
+        <img src="images/new-logo-white.svg" alt="C10D" class="h-8">
+      </a>
+
+      <!-- Close Button -->
+      <button 
+        type="button"
+        class="close-btn"
+        @click="isOpen = false"
+        aria-label="Zavřít menu">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <nav>
+        <a href="#hero" @click="isOpen = false">Domů</a>
+        <a href="#about" @click="isOpen = false">O nás</a>
+        <a href="#services" @click="isOpen = false">Služby</a>
+        <a href="#technologies" @click="isOpen = false">Technologie</a>
+        <a href="#certifications" @click="isOpen = false">Certifikace</a>
+        <a href="#projects" @click="isOpen = false">Dotace EU</a>
+        <a href="#gallery" @click="isOpen = false">Galerie</a>
+        <a href="#career" @click="isOpen = false">Kariéra</a>
+        <a href="#contact" @click="isOpen = false">Kontakt</a>
       </nav>
+
+      <!-- Language Switcher -->
+      <div class="mt-8">
+        <img src="images/flags/cs.svg" alt="Čeština" class="w-5 h-5">
+        <span>CZ</span>
+        <i class="fas fa-chevron-down text-xs ml-1"></i>
+      </div>
     </div>
   </div>
 
   <!-- Hero Section -->
-  <section id="hero" class="relative flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-16 pb-20">
+  <section id="hero" class="relative flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-24 pb-20">
     <div class="absolute inset-0 bg-grid-slate-900/[0.04] bg-[size:20px_20px]"></div>
     <div class="container mx-auto px-4 py-8 relative z-10">
       <div class="max-w-3xl mx-auto text-center">
@@ -769,82 +809,29 @@
   <!-- Scripts -->
   <script src="js/translations.js"></script>
   <script>
-    // Mobile menu functionality
-    const mobileMenuBtn = document.querySelector('.mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const header = document.getElementById('header');
-    
-    let isMenuOpen = false;
-    
-    // Toggle menu function
-    const toggleMenu = (show) => {
-      isMenuOpen = show;
-      mobileMenuBtn.setAttribute('aria-expanded', show);
-      mobileMenu.classList.toggle('hidden', !show);
-      document.body.classList.toggle('overflow-hidden', show);
-    };
-    
-    // Toggle menu on button click
-    mobileMenuBtn.addEventListener('click', () => {
-      toggleMenu(!isMenuOpen);
-    });
-
-    // Close menu when clicking a link
-    const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
-    mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        toggleMenu(false);
+    document.addEventListener('DOMContentLoaded', function() {
+      // Watch for isOpen changes to manage body scroll
+      document.addEventListener('alpine:init', () => {
+        Alpine.data('navigation', () => ({
+          isOpen: false,
+          init() {
+            this.$watch('isOpen', (value) => {
+              document.body.style.overflow = value ? 'hidden' : '';
+            });
+          }
+        }));
       });
-    });
 
-    // Header scroll behavior and active section highlighting
-    let lastScroll = 0;
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
-    
-    const highlightNavigation = () => {
-      const currentScroll = window.pageYOffset;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      
-      // Header shadow
-      if (currentScroll <= 0) {
-        header.classList.remove('shadow-lg');
-      } else {
-        header.classList.add('shadow-lg');
-      }
-      
-      // Active section highlighting
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-        
-        // Check if we're at the bottom of the page
-        const isAtBottom = (currentScroll + windowHeight) >= documentHeight - 50;
-        
-        if (isAtBottom && sectionId === 'contact') {
-          // If at bottom and this is contact section, highlight it
-          navLinks.forEach(link => {
-            link.classList.remove('border-blue-400');
-            if (link.getAttribute('href') === '#contact') {
-              link.classList.add('border-blue-400');
-            }
-          });
-        } else if (currentScroll >= sectionTop && currentScroll < sectionTop + sectionHeight) {
-          // Normal section highlighting
-          navLinks.forEach(link => {
-            link.classList.remove('border-blue-400');
-            if (link.getAttribute('href') === `#${sectionId}`) {
-              link.classList.add('border-blue-400');
-            }
-          });
+      // Close menu on resize if needed
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 1024) {
+          const scope = Alpine.scope(document.body);
+          if (scope && scope.isOpen) {
+            scope.isOpen = false;
+          }
         }
       });
-    };
-    
-    window.addEventListener('scroll', highlightNavigation);
-    window.addEventListener('load', highlightNavigation);
+    });
   </script>
   <script src="js/main.js"></script>
   <script src="js/modern.js"></script>
