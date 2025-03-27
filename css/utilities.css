@@ -1,0 +1,265 @@
+/* 
+  C10D s.r.o. Website Utilities
+  Modern CSS utilities and enhancements
+  Version: 1.0
+*/
+
+/* ---------- CSS Custom Properties Extensions ---------- */
+:root {
+  /* Enhanced Color Palette based on theme.json */
+  --primary: hsl(338, 70%, 50%);
+  --primary-light: hsl(338, 70%, 60%);
+  --primary-dark: hsl(338, 70%, 40%);
+  --primary-transparent: hsla(338, 70%, 50%, 0.2);
+  
+  /* Animation Properties */
+  --transition-fast: all 0.2s ease;
+  --transition-medium: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+  
+  /* Enhanced Shadows */
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 6px 15px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 15px 35px rgba(0, 0, 0, 0.25);
+  
+  /* Z-index Layers */
+  --z-negative: -1;
+  --z-elevate: 1;
+  --z-dropdown: 10;
+  --z-sticky: 100;
+  --z-drawer: 200;
+  --z-modal: 300;
+  --z-popover: 400;
+  --z-maximum: 999;
+}
+
+/* ---------- Modern CSS Layout Utilities ---------- */
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-sm {
+  gap: 0.5rem;
+}
+
+.gap-md {
+  gap: 1rem;
+}
+
+.gap-lg {
+  gap: 2rem;
+}
+
+/* Grid Utilities */
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Spacing Utilities */
+.m-0 {
+  margin: 0;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+/* Responsive Container */
+.container-fluid {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ---------- Animation Utilities ---------- */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ---------- Modern Button Styles ---------- */
+.btn-modern {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: var(--transition-medium);
+  z-index: -1;
+}
+
+.btn-modern:hover::before {
+  width: 100%;
+}
+
+/* ---------- Image Enhancements ---------- */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ---------- Card Enhancements ---------- */
+.card-hover {
+  transition: var(--transition-medium);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ---------- Text Utilities ---------- */
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------- Accessibility Enhancements ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.focus-visible:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ---------- Responsive Utilities ---------- */
+.hide-sm {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .hide-sm {
+    display: initial;
+  }
+  
+  .show-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-md-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-md-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-lg-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-lg-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

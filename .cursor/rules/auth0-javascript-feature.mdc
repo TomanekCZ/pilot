@@ -1,0 +1,5 @@
+---
+description: Guidelines for adding features to vanilla JavaScript apps with Auth0 Authentication
+globs: '**/*.html, **/*.js'
+alwaysApply: false
+---
