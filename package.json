@@ -1,1 +1,23 @@
-{\n  \"name\": \"c10d-web-static\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"build:css\": \"tailwindcss -i ./css/tailwind.css -o ./css/tailwind.output.css --minify\",\n    \"watch:css\": \"tailwindcss -i ./css/tailwind.css -o ./css/tailwind.output.css --watch\"\n  },\n  \"devDependencies\": {\n    \"autoprefixer\": \"^10.4.20\",\n    \"postcss\": \"^8.4.47\",\n    \"tailwindcss\": \"^3.4.14\"\n  },\n  \"description\": \"Statické webové stránky pro společnost C10D s.r.o., specializující se na průmyslovou kovovýrobu a laserové řezání.\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/TomanekCZ/pilot.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/TomanekCZ/pilot/issues\"\n  },\n  \"homepage\": \"https://github.com/TomanekCZ/pilot#readme\"\n}
+{
+  "name": "c10d-web-static",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/tailwind.css -o ./css/tailwind.output.css --minify",
+    "watch:css": "tailwindcss -i ./css/tailwind.css -o ./css/tailwind.output.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  },
+  "description": "Statické webové stránky pro společnost C10D s.r.o., specializující se na průmyslovou kovovýrobu a laserové řezání.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomanekCZ/pilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TomanekCZ/pilot/issues"
+  },
+  "homepage": "https://github.com/TomanekCZ/pilot#readme"
+}
