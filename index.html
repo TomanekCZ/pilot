@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C10D s.r.o. | Průmyslové kovovýroba a laserové řezání</title>
-  <meta name="description" content="C10D s.r.o. - Profesionální kovovýroba, laserové řezání a ohýbání plechů s více než 30 lety zkušeností.">
+  <title data-i18n="meta.title">C10D s.r.o. | Průmyslové kovovýroba a laserové řezání</title>
+  <meta name="description" data-i18n="meta.description" content="C10D s.r.o. - Profesionální kovovýroba, laserové řezání a ohýbání plechů s více než 30 lety zkušeností.">
   
   <!-- Favicons -->
   <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
@@ -23,18 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1d4ed8',
-          },
-        },
-      },
-    }
-  </script>
+  <link rel="stylesheet" href="css/tailwind.output.css">
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/utilities.css">
@@ -52,7 +41,7 @@
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <a href="#" class="flex items-center">
-          <img src="images/new-logo-white.svg" alt="C10D" class="h-8">
+          <img src="images/new-logo-white.svg" alt="" data-i18n-alt="images.logo" class="h-8">
         </a>
         
         <!-- Hamburger Menu Button -->
@@ -62,48 +51,47 @@
           @click="isOpen = !isOpen"
           :aria-expanded="isOpen"
           aria-controls="mobile-menu"
-          aria-label="Menu">
-          <span class="bg-white"></span>
-          <span class="bg-white"></span>
-          <span class="bg-white"></span>
+          aria-label="Menu"
+          data-i18n="navigation.menu">
+          <span class="bg-white" data-i18n="navigation.menu_button">Menu</span>
         </button>
 
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center justify-center flex-1">
           <ul class="flex space-x-8">
-            <li><a href="#hero" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.home">Domů</a></li>
-            <li><a href="#about" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.about">O nás</a></li>
-            <li><a href="#services" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.services">Služby</a></li>
-            <li><a href="#technologies" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.technologies">Technologie</a></li>
-            <li><a href="#certifications" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.certifications">Certifikace</a></li>
-            <li><a href="#projects" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.euProjects">Dotace EU</a></li>
-            <li><a href="#gallery" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.gallery">Galerie</a></li>
-            <li><a href="#career" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.career">Kariéra</a></li>
-            <li><a href="#contact" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.contact">Kontakt</a></li>
+            <li><a href="#hero" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.home">Domů</a></li>
+            <li><a href="#about" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.about">O nás</a></li>
+            <li><a href="#services" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.services">Služby</a></li>
+            <li><a href="#technologies" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.technologies">Technologie</a></li>
+            <li><a href="#certifications" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.certifications">Certifikace</a></li>
+            <li><a href="#projects" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.projects">Dotace EU</a></li>
+            <li><a href="#gallery" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.gallery">Galerie</a></li>
+            <li><a href="#career" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.career">Kariéra</a></li>
+            <li><a href="#kontakt" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.contact">Kontakt</a></li>
           </ul>
         </nav>
         
         <!-- Language Switcher -->
         <div class="hidden lg:block w-[200px] text-right">
-          <div class="relative group">
-            <button class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors ml-auto">
-              <img class="w-5 h-5" src="images/flags/cs.svg" alt="Čeština">
-              <span>CZ</span>
+          <div class="relative group language-switcher">
+            <button class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors ml-auto current-language">
+              <img class="w-5 h-5" src="images/flags/cs.svg" alt="Language flag" data-i18n-alt="images.flags.cs">
+              <span class="uppercase">CZ</span>
               <i class="fas fa-chevron-down text-xs ml-1"></i>
             </button>
-            <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right">
+            <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right language-dropdown">
               <div class="py-1">
-                <a href="#" data-lang="cs" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                <a href="/cs/" data-lang="cs" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                   <img class="w-5 h-5 mr-2" src="images/flags/cs.svg" alt="Čeština">
-                  <span>Čeština</span>
+                  <span data-i18n="languages.cs">Čeština</span>
                 </a>
-                <a href="#" data-lang="en" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                <a href="/en/" data-lang="en" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                   <img class="w-5 h-5 mr-2" src="images/flags/gb.svg" alt="English">
-                  <span>English</span>
+                  <span data-i18n="languages.en">English</span>
                 </a>
-                <a href="#" data-lang="de" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                <a href="/de/" data-lang="de" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                   <img class="w-5 h-5 mr-2" src="images/flags/de.svg" alt="Deutsch">
-                  <span>Deutsch</span>
+                  <span data-i18n="languages.de">Deutsch</span>
                 </a>
               </div>
             </div>
@@ -138,22 +126,38 @@
       </button>
 
       <nav>
-        <a href="#hero" @click="isOpen = false">Domů</a>
-        <a href="#about" @click="isOpen = false">O nás</a>
-        <a href="#services" @click="isOpen = false">Služby</a>
-        <a href="#technologies" @click="isOpen = false">Technologie</a>
-        <a href="#certifications" @click="isOpen = false">Certifikace</a>
-        <a href="#projects" @click="isOpen = false">Dotace EU</a>
-        <a href="#gallery" @click="isOpen = false">Galerie</a>
-        <a href="#career" @click="isOpen = false">Kariéra</a>
-        <a href="#contact" @click="isOpen = false">Kontakt</a>
+        <a href="#hero" @click="isOpen = false" data-i18n="navigation.home">Domů</a>
+        <a href="#about" @click="isOpen = false" data-i18n="navigation.about">O nás</a>
+        <a href="#services" @click="isOpen = false" data-i18n="navigation.services">Služby</a>
+        <a href="#technologies" @click="isOpen = false" data-i18n="navigation.technologies">Technologie</a>
+        <a href="#certifications" @click="isOpen = false" data-i18n="navigation.certifications">Certifikace</a>
+        <a href="#projects" @click="isOpen = false" data-i18n="navigation.projects">Dotace EU</a>
+        <a href="#gallery" @click="isOpen = false" data-i18n="navigation.gallery">Galerie</a>
+        <a href="#career" @click="isOpen = false" data-i18n="navigation.career">Kariéra</a>
+        <a href="#kontakt" @click="isOpen = false" data-i18n="navigation.contact">Kontakt</a>
       </nav>
 
-      <!-- Language Switcher -->
-      <div class="mt-8">
-        <img src="images/flags/cs.svg" alt="Čeština" class="w-5 h-5">
-        <span>CZ</span>
-        <i class="fas fa-chevron-down text-xs ml-1"></i>
+      <!-- Language Switcher Mobile -->
+      <div class="mt-8 mobile-language-switcher">
+        <button class="flex items-center space-x-2 text-white current-language">
+          <img src="images/flags/cs.svg" alt="Čeština" class="w-5 h-5">
+          <span>CZ</span>
+          <i class="fas fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="mt-2 language-dropdown hidden">
+          <a href="/cs/" data-lang="cs" class="flex items-center text-white py-2">
+            <img class="w-5 h-5 mr-2" src="images/flags/cs.svg" alt="Čeština">
+            <span data-i18n="languages.cs">Čeština</span>
+          </a>
+          <a href="/en/" data-lang="en" class="flex items-center text-white py-2">
+            <img class="w-5 h-5 mr-2" src="images/flags/gb.svg" alt="English">
+            <span data-i18n="languages.en">English</span>
+          </a>
+          <a href="/de/" data-lang="de" class="flex items-center text-white py-2">
+            <img class="w-5 h-5 mr-2" src="images/flags/de.svg" alt="Deutsch">
+            <span data-i18n="languages.de">Deutsch</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -163,24 +167,22 @@
     <div class="absolute inset-0 bg-grid-slate-900/[0.04] bg-[size:20px_20px]"></div>
     <div class="container mx-auto px-4 py-8 relative z-10">
       <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight" data-key="home.hero.title">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight" data-i18n="hero.title">
           Přesné řezání laserem a zpracování kovů
         </h1>
-        <p class="text-base md:text-lg text-gray-300 mb-8 max-w-2xl mx-auto" data-key="home.hero.subtitle">
+        <p class="text-base md:text-lg text-gray-300 mb-8 max-w-2xl mx-auto" data-i18n="hero.subtitle">
           Špičková technologie a více než 30 let zkušeností ve strojírenské výrobě a zpracování plechů.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
           <a href="technologies.html" 
-             class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25" 
-             data-key="home.hero.button1">
+             class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
             <i class="fas fa-cogs mr-2"></i>
-            Naše technologie
+            <span data-i18n="hero.button1">Naše technologie</span>
           </a>
           <a href="contact.html" 
-             class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white border-2 border-white rounded-lg hover:bg-white hover:text-slate-900 transition-all duration-300 transform hover:scale-105" 
-             data-key="home.hero.button2">
+             class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white border-2 border-white rounded-lg hover:bg-white hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
             <i class="fas fa-envelope mr-2"></i>
-            Kontaktujte nás
+            <span data-i18n="hero.button2">Kontaktujte nás</span>
           </a>
         </div>
       </div>
@@ -192,26 +194,26 @@
   <section id="about" class="relative py-24 bg-white">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4" data-key="home.about.title">O společnosti C10D</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto" data-key="home.about.subtitle">Společnost je od svého vzniku v roce 2011 zaměřená na všeobecnou realizaci projektů ve strojírenském průmyslu.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4" data-i18n="home.about.title">O společnosti C10D</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto" data-i18n="home.about.subtitle">Společnost je od svého vzniku v roce 2011 zaměřená na všeobecnou realizaci projektů ve strojírenském průmyslu.</p>
       </div>
       
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
-          <p class="text-slate-700 leading-relaxed" data-key="home.about.paragraph1">
+          <p class="text-slate-700 leading-relaxed" data-i18n="home.about.paragraph1">
             Realizujeme komplexní výrobní procesy od dělení plechů přes svařování od menších celků až po velké podvozkové rámy na návěsy kamionů. Následné povrchové úpravy dle požadavků našich zákazníků nabízíme prostřednictvím našich dlouhodobých obchodních partnerů.
           </p>
-          <p class="text-slate-700 leading-relaxed" data-key="home.about.paragraph2">
+          <p class="text-slate-700 leading-relaxed" data-i18n="home.about.paragraph2">
             Předností naší společnosti je nabídka širokého portfolia služeb v té nejlepší kvalitě a krátkém čase. Rychlost, pružnost a vysoká kvalita je realizována v týmu 25 profesionálních pracovníků společnosti s prioritou na spokojenost zákazníka.
           </p>
           
-          <p class="text-slate-700 leading-relaxed">
+          <p class="text-slate-700 leading-relaxed" data-i18n="home.about.paragraph3">
             <span class="text-blue-600 font-semibold">Vysoká profesní a&nbsp;odborná úroveň společně s&nbsp;bohatě vybaveným technologickým zázemím</span> nám umožňuje pružně reagovat na&nbsp;vývoj a&nbsp;potřeby v&nbsp;oblasti strojírenského průmyslu. V&nbsp;současné době se&nbsp;specializujeme především na&nbsp;zakázkovou výrobu pro&nbsp;zpracování plechů s&nbsp;využitím CNC technologií. K&nbsp;realizaci zakázek nám slouží vlastní výrobní haly.
           </p>
         </div>
         
         <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-lg mx-auto">
-          <img src="images/svarec.jpg" alt="Svářeč při práci" class="w-full h-auto transform hover:scale-105 transition-transform duration-700">
+          <img src="images/svarec.jpg" alt="Svářeč při práci" class="w-full h-auto transform hover:scale-105 transition-transform duration-700 lozad" data-src="images/svarec.jpg">
         </div>
       </div>
     </div>
@@ -222,7 +224,7 @@
     <div class="absolute inset-0 bg-grid-slate-900/[0.02] bg-[size:20px_20px]"></div>
     <div class="container mx-auto px-4 relative z-10">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4" data-key="home.services.title">Naše služby</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4" data-i18n="home.services.title">Naše služby</h2>
       </div>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -236,12 +238,12 @@
               <line x1="8.6" y1="15.4" x2="19" y2="5" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">Laserové řezání</h3>
-          <p class="text-slate-600 mb-8 flex-grow">
+          <h3 class="text-xl font-bold text-slate-900 mb-3" data-i18n="home.services.laser.title">Laserové řezání</h3>
+          <p class="text-slate-600 mb-8 flex-grow" data-i18n="home.services.laser.description">
             (pro max. formáty plechů 2 000*6 000mm)
           </p>
           <div class="relative overflow-hidden rounded-xl h-48">
-            <img src="images/laser.jpg" alt="Laserové řezání" class="w-full h-full object-cover">
+            <img data-src="images/laser.jpg" alt="Laserové řezání" class="w-full h-full object-cover lozad">
           </div>
         </div>
         
@@ -249,12 +251,12 @@
           <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6">
             <i class="fas fa-cogs text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">CNC ohraňování</h3>
-          <p class="text-slate-600 mb-8 flex-grow">
+          <h3 class="text-xl font-bold text-slate-900 mb-3" data-i18n="home.services.bending.title">CNC ohraňování</h3>
+          <p class="text-slate-600 mb-8 flex-grow" data-i18n="home.services.bending.description">
             (pro max. délku 6 000mm / 400t)
           </p>
           <div class="relative overflow-hidden rounded-xl h-48">
-            <img src="images/ohranovani.jpg" alt="CNC Ohraňování" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <img data-src="images/ohranovani.jpg" alt="CNC Ohraňování" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 lozad">
           </div>
         </div>
         
@@ -262,12 +264,12 @@
           <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6">
             <i class="fas fa-industry text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">Svařování</h3>
-          <p class="text-slate-600 mb-8 flex-grow">
+          <h3 class="text-xl font-bold text-slate-900 mb-3" data-i18n="home.services.welding.title">Svařování</h3>
+          <p class="text-slate-600 mb-8 flex-grow" data-i18n="home.services.welding.description">
             (Invertory Fronius)
           </p>
           <div class="relative overflow-hidden rounded-xl h-48">
-            <img src="images/svarovani2.jpg" alt="Svařování" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <img data-src="images/svarovani2.jpg" alt="Svařování" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 lozad">
           </div>
         </div>
         
@@ -275,12 +277,12 @@
           <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6">
             <i class="fas fa-fill-drip text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">Třískové obrábění</h3>
-          <p class="text-slate-600 mb-8 flex-grow">
+          <h3 class="text-xl font-bold text-slate-900 mb-3" data-i18n="home.services.machining.title">Třískové obrábění</h3>
+          <p class="text-slate-600 mb-8 flex-grow" data-i18n="home.services.machining.description">
             (soustruh, frézka, pásová pila, vyvrtávačka, vrtačka, brusky)
           </p>
           <div class="relative overflow-hidden rounded-xl h-48">
-            <img src="images/obrabeni.jpg" alt="Třískové obrábění" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <img data-src="images/obrabeni.jpg" alt="Třískové obrábění" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 lozad">
           </div>
         </div>
       </div>
@@ -292,8 +294,8 @@
     <div class="absolute inset-0 bg-grid-slate-700/[0.05] bg-[size:20px_20px]"></div>
     <div class="container mx-auto px-4 relative z-10">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Naše technologie</h2>
-        <p class="text-lg text-gray-300 mb-6">Investujeme do nejnovějších strojů pro zajištění maximální kvality a efektivity</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-i18n="technologies.title">Naše technologie</h2>
+        <p class="text-lg text-gray-300 mb-6" data-i18n="technologies.subtitle">Investujeme do nejnovějších strojů pro zajištění maximální kvality a efektivity</p>
       </div>
 
       <!-- Technology Categories -->
@@ -302,7 +304,7 @@
         <div class="bg-white/[0.02] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
           <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
             <i class="fas fa-laser text-blue-500 mr-3"></i>
-            Pálicí centra
+            <span data-i18n="technologies.equipment.cutting_centers">Pálicí centra</span>
           </h3>
           
           <div class="space-y-6">
@@ -310,19 +312,19 @@
             <div class="bg-white/[0.03] rounded-xl p-6">
               <h4 class="text-xl font-bold text-white mb-3">Fiber laser LVD Phoenix FL-6020</h4>
               <div class="space-y-2 text-gray-300">
-                <p><i class="fas fa-bolt text-blue-500 mr-2"></i>Výkon: 4 kW</p>
-                <p><i class="fas fa-expand text-blue-500 mr-2"></i>Max. velikost plechu: 2000x6000mm</p>
+                <p><i class="fas fa-bolt text-blue-500 mr-2"></i><span data-i18n="technologies.technical.power">Výkon</span>: 4 kW</p>
+                <p><i class="fas fa-expand text-blue-500 mr-2"></i><span data-i18n="technologies.specs.max_sheet">Max. velikost plechu</span>: 2000x6000mm</p>
                 <div class="mt-2">
-                  <p class="font-semibold text-white mb-1">Maximální tloušťka plechu:</p>
+                  <p class="font-semibold text-white mb-1" data-i18n="technologies.specs.max_thickness">Maximální tloušťka plechu:</p>
                   <ul class="list-none grid grid-cols-2 gap-x-4 ml-6">
-                    <li><span class="text-blue-400">›</span> S355 – 15mm</li>
-                    <li><span class="text-blue-400">›</span> Nerez – 10mm</li>
-                    <li><span class="text-blue-400">›</span> Hliník – 8mm</li>
+                    <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.materials.steel">S355</span> – 15mm</li>
+                    <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.materials.stainless">Nerez</span> – 10mm</li>
+                    <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.materials.aluminum">Hliník</span> – 8mm</li>
                   </ul>
                 </div>
                 <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 mt-3">
                   <i class="fas fa-file-pdf mr-2"></i>
-                  Technické možnosti (PDF)
+                  <span data-i18n="technologies.technical.technical_specs">Technické možnosti (PDF)</span>
                 </a>
               </div>
             </div>
@@ -331,19 +333,36 @@
             <div class="bg-white/[0.03] rounded-xl p-6">
               <h4 class="text-xl font-bold text-white mb-3">Fiber laser AMADA LCG 3015 AJ</h4>
               <div class="space-y-2 text-gray-300">
-                <p><i class="fas fa-bolt text-blue-500 mr-2"></i>Výkon: 9 kW</p>
-                <p><i class="fas fa-expand text-blue-500 mr-2"></i>Max. velikost plechu: 1500x3000mm</p>
+                <p>
+                  <i class="fas fa-bolt text-blue-500 mr-2"></i>
+                  <span data-i18n="technologies.specs.power">Výkon</span>: 9 kW
+                </p>
+                <p>
+                  <i class="fas fa-expand text-blue-500 mr-2"></i>
+                  <span data-i18n="technologies.specs.max_sheet">Max. velikost plechu</span>: 1500x3000mm
+                </p>
                 <div class="mt-2">
-                  <p class="font-semibold text-white mb-1">Maximální tloušťka plechu:</p>
+                  <p class="font-semibold text-white mb-1" data-i18n="technologies.specs.max_thickness">
+                    Maximální tloušťka plechu:
+                  </p>
                   <ul class="list-none grid grid-cols-2 gap-x-4 ml-6">
-                    <li><span class="text-blue-400">›</span> S355 – 25mm</li>
-                    <li><span class="text-blue-400">›</span> Nerez – 20mm</li>
-                    <li><span class="text-blue-400">›</span> Hliník – 20mm</li>
+                    <li>
+                      <span class="text-blue-400">›</span> 
+                      <span data-i18n="materials.steel">S355</span> – 25mm
+                    </li>
+                    <li>
+                      <span class="text-blue-400">›</span> 
+                      <span data-i18n="materials.stainless">Nerez</span> – 20mm
+                    </li>
+                    <li>
+                      <span class="text-blue-400">›</span> 
+                      <span data-i18n="materials.aluminum">Hliník</span> – 20mm
+                    </li>
                   </ul>
                 </div>
-                <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 mt-3">
+                <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 mt-2">
                   <i class="fas fa-file-pdf mr-2"></i>
-                  Technické možnosti (PDF)
+                  <span data-i18n="technologies.technical.technical_specs">Technické možnosti (PDF)</span>
                 </a>
               </div>
             </div>
@@ -354,7 +373,7 @@
         <div class="bg-white/[0.02] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
           <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
             <i class="fas fa-cogs text-blue-500 mr-3"></i>
-            Ohraňovací lisy
+            <span data-i18n="technologies.equipment.bending_machines">Ohraňovací lisy</span>
           </h3>
           
           <div class="space-y-6">
@@ -363,11 +382,11 @@
               <h4 class="text-xl font-bold text-white mb-4">DURMA CNC HAP 60400</h4>
               <div class="space-y-2 text-gray-300">
                 <div class="grid grid-cols-1 gap-2">
-                  <p><i class="fas fa-ruler-horizontal text-blue-500 mr-2"></i>Max. délka ohýbání: 6000mm</p>
-                  <p><i class="fas fa-compress-arrows-alt text-blue-500 mr-2"></i>Max. tlak: 400 tun</p>
+                  <p><i class="fas fa-ruler-horizontal text-blue-500 mr-2"></i><span data-i18n="technologies.technical.max_length">Max. délka ohýbání</span>: 6000mm</p>
+                  <p><i class="fas fa-compress-arrows-alt text-blue-500 mr-2"></i><span data-i18n="technologies.technical.max_pressure">Max. tlak</span>: 400 tun</p>
                   <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 mt-2">
                     <i class="fas fa-file-pdf mr-2"></i>
-                    Technické možnosti (PDF)
+                    <span data-i18n="technologies.technical.technical_specs">Technické možnosti (PDF)</span>
                   </a>
                 </div>
               </div>
@@ -382,7 +401,7 @@
                   <p><i class="fas fa-compress-arrows-alt text-blue-500 mr-2"></i>Max. tlak: 400 tun</p>
                   <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 mt-2">
                     <i class="fas fa-file-pdf mr-2"></i>
-                    Technické možnosti (PDF)
+                    <span data-i18n="technologies.technical.technical_specs">Technické možnosti (PDF)</span>
                   </a>
                 </div>
               </div>
@@ -397,13 +416,13 @@
         <div class="bg-white/[0.02] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
           <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
             <i class="fas fa-tools text-blue-500 mr-3"></i>
-            Obrobna
+            <span data-i18n="technologies.equipment.machining_shop">Obrobna</span>
           </h3>
           <ul class="list-none space-y-3 text-gray-300">
-            <li><span class="text-blue-400">›</span> Soustruh SU32 + digitální odjíždění</li>
-            <li><span class="text-blue-400">›</span> Frézka FGS 32/40</li>
-            <li><span class="text-blue-400">›</span> Sloupová vrtačka VR6A</li>
-            <li><span class="text-blue-400">›</span> Pásová pila</li>
+            <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.equipment.lathe">Soustruh SU32 + digitální odjíždění</span></li>
+            <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.equipment.mill">Frézka FGS 32/40</span></li>
+            <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.equipment.drill">Sloupová vrtačka VR6A</span></li>
+            <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.equipment.saw">Pásová pila</span></li>
           </ul>
         </div>
 
@@ -412,7 +431,7 @@
           <div class="mb-8">
             <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
               <i class="fas fa-industry text-blue-500 mr-3"></i>
-              Svářečky
+              <span data-i18n="technologies.equipment.welding_machines" class="text-gray-300">Svářečky</span>
             </h3>
             <p class="text-gray-300">Fronius</p>
           </div>
@@ -420,14 +439,17 @@
           <div>
             <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
               <i class="fas fa-crane text-blue-500 mr-3"></i>
-              Jeřáby
+              <span data-i18n="technologies.equipment.cranes" class="text-gray-300">Jeřáby</span>
             </h3>
-            <ul class="list-none space-y-3 text-gray-300">
-              <li><span class="text-blue-400">›</span> Mostový jeřáb nosnost 5 000kg</li>
-              <li><span class="text-blue-400">›</span> Mostový jeřáb nosnost 3 000kg</li>
-              <li><span class="text-blue-400">›</span> Mostový jeřáb nosnost 2 500kg</li>
-              <li><span class="text-blue-400">›</span> Mostový jeřáb nosnost 2 000kg</li>
-            </ul>
+            <div class="mt-2">
+              <p class="font-semibold text-gray-300 mb-1" data-i18n="technologies.technical.crane_capacity">Mostový jeřáb nosnost</p>
+              <ul class="list-none grid grid-cols-2 gap-x-4 ml-6">
+                <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.crane_5000" class="text-gray-300">5 000kg</span></li>
+                <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.crane_3000" class="text-gray-300">3 000kg</span></li>
+                <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.crane_2500" class="text-gray-300">2 500kg</span></li>
+                <li><span class="text-blue-400">›</span> <span data-i18n="technologies.technical.crane_2000" class="text-gray-300">2 000kg</span></li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -436,7 +458,7 @@
           <div class="mb-8">
             <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
               <i class="fas fa-industry text-blue-500 mr-3"></i>
-              Vyráběné svařence
+              <span data-i18n="technologies.production.title">Vyráběné svařence</span>
             </h3>
             <p class="text-gray-300">2 500 x 10 000mm do max. hmotnosti 3 000kg</p>
           </div>
@@ -444,14 +466,14 @@
           <div>
             <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
               <i class="fas fa-handshake text-blue-500 mr-3"></i>
-              Kooperační služby
+              <span data-i18n="technologies.cooperation.title">Kooperační služby</span>
             </h3>
             <ul class="list-none space-y-3 text-gray-300">
-              <li><span class="text-blue-400">›</span> Tryskání</li>
-              <li><span class="text-blue-400">›</span> Galvanické zinkování</li>
-              <li><span class="text-blue-400">›</span> Žárové zinkování</li>
-              <li><span class="text-blue-400">›</span> Práškové lakování</li>
-              <li><span class="text-blue-400">›</span> Mokrá barva</li>
+              <li><span class="text-blue-400">›</span> <span data-i18n="technologies.cooperation.items.blasting">Tryskání</span></li>
+              <li><span class="text-blue-400">›</span> <span data-i18n="technologies.cooperation.items.galvanizing">Galvanické zinkování</span></li>
+              <li><span class="text-blue-400">›</span> <span data-i18n="technologies.cooperation.items.hot_dip">Žárové zinkování</span></li>
+              <li><span class="text-blue-400">›</span> <span data-i18n="technologies.cooperation.items.powder">Práškové lakování</span></li>
+              <li><span class="text-blue-400">›</span> <span data-i18n="technologies.cooperation.items.wet">Mokrá barva</span></li>
             </ul>
           </div>
         </div>
@@ -463,8 +485,8 @@
   <section id="certifications" class="relative py-24 bg-white">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Certifikace</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Naše kvalita je podložena řadou certifikací a osvědčení</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4" data-i18n="certifications.title">Certifikace</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto" data-i18n="certifications.subtitle">Naše kvalita je podložena řadou certifikací a osvědčení</p>
       </div>
 
       <div class="max-w-6xl mx-auto">
@@ -479,21 +501,21 @@
               </div>
               <div class="ml-6 flex-grow">
                 <div class="flex items-center justify-between mb-2">
-                  <h3 class="text-lg font-semibold text-slate-900">Certifikát ČSN EN ISO 9001:2016</h3>
+                  <h3 class="text-lg font-semibold text-slate-900" data-i18n="certifications.details.iso9001.title">Certifikát ČSN EN ISO 9001:2016</h3>
                   <a href="/assets/docs/C10D-9001-2.pdf" class="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors">
                     <i class="fas fa-file-pdf mr-2"></i>
-                    Zobrazit
+                    <span data-i18n="certifications.details.iso9001.view">Zobrazit</span>
                   </a>
                 </div>
-                <p class="text-slate-600 mb-3">Systém managementu kvality - tento certifikát potvrzuje, že naše společnost má zavedený a udržovaný systém managementu kvality.</p>
+                <p class="text-slate-600 mb-3" data-i18n="certifications.details.iso9001.description">Systém managementu kvality - tento certifikát potvrzuje, že naše společnost má zavedený a udržovaný systém managementu kvality.</p>
                 <ul class="space-y-1 text-slate-600">
                   <li class="flex items-start">
                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                    <span>Systematické řízení procesů</span>
+                    <span data-i18n="certifications.details.iso9001.points.process">Systematické řízení procesů</span>
                   </li>
                   <li class="flex items-start">
                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                    <span>Pravidelné audity a kontroly</span>
+                    <span data-i18n="certifications.details.iso9001.points.audits">Pravidelné audity a kontroly</span>
                   </li>
                 </ul>
               </div>
@@ -510,21 +532,21 @@
               </div>
               <div class="ml-6 flex-grow">
                 <div class="flex items-center justify-between mb-2">
-                  <h3 class="text-lg font-semibold text-slate-900">Certifikát ČSN EN ISO 3834-2:2022</h3>
+                  <h3 class="text-lg font-semibold text-slate-900" data-i18n="certifications.details.iso3834.title">Certifikát ČSN EN ISO 3834-2:2022</h3>
                   <a href="/assets/docs/C10D-3834.pdf" class="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors">
                     <i class="fas fa-file-pdf mr-2"></i>
-                    Zobrazit
+                    <span data-i18n="certifications.details.iso9001.view">Zobrazit</span>
                   </a>
                 </div>
-                <p class="text-slate-600 mb-3">Požadavky na jakost při tavném svařování - certifikát potvrzuje splnění vyšších požadavků na jakost při svařování.</p>
+                <p class="text-slate-600 mb-3" data-i18n="certifications.details.iso3834.description">Požadavky na jakost při tavném svařování - certifikát potvrzuje splnění vyšších požadavků na jakost při svařování.</p>
                 <ul class="space-y-1 text-slate-600">
                   <li class="flex items-start">
                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                    <span>Kvalifikované svářečské postupy</span>
+                    <span data-i18n="certifications.details.iso3834.points.procedures">Kvalifikované svářečské postupy</span>
                   </li>
                   <li class="flex items-start">
                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                    <span>Kontrola kvality svařování</span>
+                    <span data-i18n="certifications.details.iso3834.points.quality">Kontrola kvality svařování</span>
                   </li>
                 </ul>
               </div>
@@ -541,21 +563,21 @@
               </div>
               <div class="ml-6 flex-grow">
                 <div class="flex items-center justify-between mb-2">
-                  <h3 class="text-lg font-semibold text-slate-900">Certifikát ČSN EN 1090-2 Tř.EXC3</h3>
+                  <h3 class="text-lg font-semibold text-slate-900" data-i18n="certifications.details.en1090_2.title">Certifikát ČSN EN 1090-2 Tř.EXC3</h3>
                   <a href="/assets/docs/C10D-1090.pdf" class="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors">
                     <i class="fas fa-file-pdf mr-2"></i>
-                    Zobrazit
+                    <span data-i18n="certifications.details.iso9001.view">Zobrazit</span>
                   </a>
                 </div>
-                <p class="text-slate-600 mb-3">Provádění ocelových konstrukcí - certifikát třídy EXC3 potvrzuje naši způsobilost k výrobě náročných konstrukcí.</p>
+                <p class="text-slate-600 mb-3" data-i18n="certifications.details.en1090_2.description">Provádění ocelových konstrukcí - certifikát třídy EXC3 potvrzuje naši způsobilost k výrobě náročných konstrukcí.</p>
                 <ul class="space-y-1 text-slate-600">
                   <li class="flex items-start">
                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                    <span>Vysoké nároky na kvalitu</span>
+                    <span data-i18n="certifications.details.en1090_2.points.quality">Vysoké nároky na kvalitu</span>
                   </li>
                   <li class="flex items-start">
                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                    <span>Přísné technické požadavky</span>
+                    <span data-i18n="certifications.details.en1090_2.points.technical">Přísné technické požadavky</span>
                   </li>
                 </ul>
               </div>
@@ -572,21 +594,21 @@
               </div>
               <div class="ml-6 flex-grow">
                 <div class="flex items-center justify-between mb-2">
-                  <h3 class="text-lg font-semibold text-slate-900">Certifikát EN 1090-1:2009+A1:2-11</h3>
+                  <h3 class="text-lg font-semibold text-slate-900" data-i18n="certifications.details.en1090_1.title">Certifikát EN 1090-1:2009+A1:2-11</h3>
                   <a href="/assets/docs/EN-1090.pdf" class="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors">
                     <i class="fas fa-file-pdf mr-2"></i>
-                    Zobrazit
+                    <span data-i18n="certifications.details.iso9001.view">Zobrazit</span>
                   </a>
                 </div>
-                <p class="text-slate-600 mb-3">Systém řízení výroby - certifikát potvrzuje shodu výrobního procesu s evropskými normami pro ocelové konstrukce.</p>
+                <p class="text-slate-600 mb-3" data-i18n="certifications.details.en1090_1.description">Systém řízení výroby - certifikát potvrzuje shodu výrobního procesu s evropskými normami pro ocelové konstrukce.</p>
                 <ul class="space-y-1 text-slate-600">
                   <li class="flex items-start">
                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                    <span>Standardizované postupy</span>
+                    <span data-i18n="certifications.details.en1090_1.points.procedures">Standardizované postupy</span>
                   </li>
                   <li class="flex items-start">
                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                    <span>Kontrola procesů</span>
+                    <span data-i18n="certifications.details.en1090_1.points.control">Kontrola procesů</span>
                   </li>
                 </ul>
               </div>
@@ -603,22 +625,22 @@
       <div class="max-w-6xl mx-auto">
         <!-- Content -->
         <div class="max-w-3xl mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 md:mb-10">Dotace EU</h2>
-          <p class="text-base md:text-lg text-slate-600 mb-8 md:mb-10 leading-relaxed px-4 md:px-0">
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 md:mb-10" data-i18n="eu_projects.title">Dotace EU</h2>
+          <p class="text-base md:text-lg text-slate-600 mb-8 md:mb-10 leading-relaxed px-4 md:px-0" data-i18n="eu_projects.description">
             V roce 2019 firma C10D s.r.o. čerpala dotaci na projekt "Optimalizace náprav přívěsů nákladních automobilů", který byl spolufinancován Evropskou unií. Hlavním cílem projektu bylo vytvoření počítačového modelu náprav na základě zpracování snímků pořízených přesným 3D skenerem.
           </p>
 
           <!-- EU Logos -->
           <div class="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-16 mb-8 md:mb-10">
             <div class="w-full md:w-auto px-8 md:px-0">
-              <img src="images/EU.jpg" alt="Evropská unie - Evropský fond pro regionální rozvoj" class="h-auto w-full max-w-[280px] md:max-w-[320px] object-contain mx-auto">
+              <img src="images/EU.jpg" alt="" data-i18n-alt="images.eu" class="h-auto w-full max-w-[280px] md:max-w-[320px] object-contain mx-auto">
             </div>
             <div class="w-full md:w-auto px-8 md:px-0">
-              <img src="images/MPO.png" alt="Ministerstvo průmyslu a obchodu" class="h-auto w-full max-w-[200px] md:max-w-[240px] object-contain mx-auto">
+              <img src="images/MPO.png" alt="" data-i18n-alt="images.mpo" class="h-auto w-full max-w-[200px] md:max-w-[240px] object-contain mx-auto">
             </div>
           </div>
 
-          <a href="#" class="inline-flex items-center justify-center px-8 py-3 text-base font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300 rounded-lg">
+          <a href="#" class="inline-flex items-center justify-center px-8 py-3 text-base font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300 rounded-lg" data-i18n="eu_projects.more_info">
             Více informací
           </a>
         </div>
@@ -630,8 +652,8 @@
   <section id="gallery" class="py-20 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Naše práce</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Ukázky realizovaných projektů</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4" data-i18n="gallery.title">Naše práce</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto" data-i18n="gallery.subtitle">Ukázky realizovaných projektů</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
@@ -639,8 +661,8 @@
           <img src="images/laser_1.jpg" alt="Laserové řezání" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div class="absolute bottom-0 left-0 right-0 p-4">
-              <h3 class="text-white font-medium">Laserové řezání</h3>
-              <p class="text-gray-300 text-sm">Precizní zpracování kovů</p>
+              <h3 class="text-white font-medium" data-i18n="gallery.items.laser_cutting.title">Laserové řezání</h3>
+              <p class="text-gray-300 text-sm" data-i18n="gallery.items.laser_cutting.description">Precizní zpracování kovů</p>
             </div>
           </div>
         </div>
@@ -649,8 +671,8 @@
           <img src="images/ohranovani.jpg" alt="CNC Ohraňování" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div class="absolute bottom-0 left-0 right-0 p-4">
-              <h3 class="text-white font-medium">CNC Ohraňování</h3>
-              <p class="text-gray-300 text-sm">Přesné ohýbání plechů</p>
+              <h3 class="text-white font-medium" data-i18n="gallery.items.cnc_bending.title">CNC Ohraňování</h3>
+              <p class="text-gray-300 text-sm" data-i18n="gallery.items.cnc_bending.description">Přesné ohýbání plechů</p>
             </div>
           </div>
         </div>
@@ -659,8 +681,8 @@
           <img src="images/svarovani2.jpg" alt="Svařování" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div class="absolute bottom-0 left-0 right-0 p-4">
-              <h3 class="text-white font-medium">Svařování</h3>
-              <p class="text-gray-300 text-sm">Profesionální svářečské práce</p>
+              <h3 class="text-white font-medium" data-i18n="gallery.items.welding.title">Svařování</h3>
+              <p class="text-gray-300 text-sm" data-i18n="gallery.items.welding.description">Profesionální svářečské práce</p>
             </div>
           </div>
         </div>
@@ -669,17 +691,17 @@
           <img src="images/obrabeni.jpg" alt="Třískové obrábění" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div class="absolute bottom-0 left-0 right-0 p-4">
-              <h3 class="text-white font-medium">Třískové obrábění</h3>
-              <p class="text-gray-300 text-sm">Přesné strojní obrábění</p>
+              <h3 class="text-white font-medium" data-i18n="gallery.items.machining.title">Třískové obrábění</h3>
+              <p class="text-gray-300 text-sm" data-i18n="gallery.items.machining.description">Přesné strojní obrábění</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="text-center mt-8">
-        <a href="gallery.html" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
+        <a href="gallery.html" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25" data-i18n="gallery.viewAll">
           <i class="fas fa-images mr-2"></i>
-          <span data-key="gallery.viewAll">Zobrazit celou galerii</span>
+          <span data-i18n="gallery.viewAll">Zobrazit celou galerii</span>
         </a>
       </div>
     </div>
@@ -688,19 +710,19 @@
   <!-- Career Section -->
   <section id="career" class="py-20 bg-white">
     <div class="max-w-3xl mx-auto text-center px-4">
-      <h2 class="text-4xl font-bold text-slate-800 mb-4" data-key="career.title">Kariéra</h2>
-      <p class="text-gray-500 text-lg mb-10" data-key="career.subtitle">
+      <h2 class="text-4xl font-bold text-slate-800 mb-4" data-i18n="career.title">Kariéra</h2>
+      <p class="text-gray-500 text-lg mb-10" data-i18n="career.subtitle">
         Hledáme nové kolegy do našeho týmu. Nabízíme stabilní práci v moderní společnosti s řadou benefitů.
       </p>
 
-      <h3 class="text-sm uppercase text-slate-700 font-semibold tracking-widest mb-6">Aktuálně otevřené pozice</h3>
+      <h3 class="text-sm uppercase text-slate-700 font-semibold tracking-widest mb-6" data-i18n="career.open_positions">Aktuálně otevřené pozice</h3>
 
       <div class="space-y-4 text-left">
         <!-- 1. pozice -->
         <a href="career.html" class="flex items-center justify-between p-5 bg-slate-50 rounded-xl hover:bg-blue-50 transition cursor-pointer shadow-sm group">
           <div class="flex items-center space-x-4">
             <i class="fas fa-fire text-blue-600 text-2xl"></i>
-            <span class="text-slate-800 font-medium group-hover:text-blue-700 transition">Svářeči/Stehaři</span>
+            <span class="text-slate-800 font-medium group-hover:text-blue-700 transition" data-i18n="career.positions.welder">Svářeči/Stehaři</span>
           </div>
           <i class="fas fa-chevron-right text-gray-400 group-hover:text-blue-600 transition"></i>
         </a>
@@ -711,7 +733,7 @@
             <svg class="h-7 w-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
-            <span class="text-slate-800 font-medium group-hover:text-blue-700 transition">Obsluha CNC laseru</span>
+            <span class="text-slate-800 font-medium group-hover:text-blue-700 transition" data-i18n="career.positions.cnc_operator">Obsluha CNC laseru</span>
           </div>
           <i class="fas fa-chevron-right text-gray-400 group-hover:text-blue-600 transition"></i>
         </a>
@@ -720,7 +742,7 @@
         <a href="career.html" class="flex items-center justify-between p-5 bg-slate-50 rounded-xl hover:bg-blue-50 transition cursor-pointer shadow-sm group">
           <div class="flex items-center space-x-4">
             <i class="fas fa-cogs text-blue-600 text-2xl"></i>
-            <span class="text-slate-800 font-medium group-hover:text-blue-700 transition">Soustružník/Frézař</span>
+            <span class="text-slate-800 font-medium group-hover:text-blue-700 transition" data-i18n="career.positions.machinist">Soustružník/Frézař</span>
           </div>
           <i class="fas fa-chevron-right text-gray-400 group-hover:text-blue-600 transition"></i>
         </a>
@@ -729,19 +751,19 @@
       <!-- Tlačítko -->
       <div class="mt-10">
         <a href="career.html" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
-          <i class="fas fa-briefcase mr-2"></i> Zobrazit všechny pozice
+          <i class="fas fa-briefcase mr-2"></i> <span data-i18n="career.all_positions">Zobrazit všechny pozice</span>
         </a>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-white">
+  <section id="kontakt" class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-2xl mx-auto">
         <div class="text-center mb-8">
-          <h2 class="text-3xl font-bold text-slate-900 mb-2">Kontaktujte nás</h2>
-          <p class="text-slate-600">Jsme tu pro vás. Neváhejte nás kontaktovat.</p>
+          <h2 class="text-3xl font-bold text-slate-900 mb-2" data-i18n="contact.title">Kontaktujte nás</h2>
+          <p class="text-slate-600" data-i18n="contact.subtitle">Jsme tu pro vás. Neváhejte nás kontaktovat.</p>
         </div>
         
         <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mb-8">
@@ -750,8 +772,8 @@
               <i class="fas fa-phone text-blue-600 text-xl"></i>
             </div>
             <div class="text-left">
-              <p class="text-slate-900 font-semibold text-lg">+420 123 456 789</p>
-              <p class="text-slate-600 text-sm">Po-Pá: 7:00 - 15:30</p>
+              <p class="text-slate-900 font-semibold text-lg" data-i18n="contact.phone">+420 123 456 789</p>
+              <p class="text-slate-600 text-sm" data-i18n="contact.hours">Po-Pá: 7:00 - 15:30</p>
             </div>
           </a>
           
@@ -761,13 +783,13 @@
             </div>
             <div class="text-left">
               <p class="text-slate-900 font-semibold text-lg">info@c10d.cz</p>
-              <p class="text-slate-600 text-sm">Napište nám</p>
+              <p class="text-slate-600 text-sm" data-i18n="contact.email">Napište nám</p>
             </div>
           </a>
         </div>
         
         <div class="text-center">
-          <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+          <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors" data-i18n="contact.more_info">
             Více kontaktních informací
             <i class="fas fa-arrow-right ml-2"></i>
           </a>
@@ -782,64 +804,54 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
           <img src="images/new-logo-white.svg" alt="C10D s.r.o. logo" class="h-10 w-auto mb-4">
-          <p class="text-gray-400">Specialisté na laserové řezání a zpracování plechů</p>
+          <p class="text-gray-400" data-i18n="footer.description">Specialisté na laserové řezání a zpracování plechů</p>
         </div>
         
         <div>
-          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <h3 class="text-lg font-semibold mb-4" data-i18n="footer.contact.title">Kontakt</h3>
           <ul class="space-y-2 text-gray-400">
-            <li><i class="fas fa-map-marker-alt mr-2"></i>Klimkovice 742 83</li>
+            <li><i class="fas fa-map-marker-alt mr-2"></i><span data-i18n="contact.address">Klimkovice 742 83</span></li>
             <li><i class="fas fa-phone mr-2"></i>+420 123 456 789</li>
             <li><i class="fas fa-envelope mr-2"></i>info@c10d.cz</li>
           </ul>
         </div>
         
         <div>
-          <h3 class="text-lg font-semibold mb-4">Menu</h3>
+          <h3 class="text-lg font-semibold mb-4" data-i18n="footer.menu.title">Menu</h3>
           <ul class="space-y-2">
-            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Domů</a></li>
-            <li><a href="index.html#about" class="text-gray-400 hover:text-white transition-colors">O nás</a></li>
-            <li><a href="index.html#services" class="text-gray-400 hover:text-white transition-colors">Služby</a></li>
-            <li><a href="index.html#technologies" class="text-gray-400 hover:text-white transition-colors">Technologie</a></li>
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="navigation.home">Domů</a></li>
+            <li><a href="index.html#about" class="text-gray-400 hover:text-white transition-colors" data-i18n="navigation.about">O nás</a></li>
+            <li><a href="index.html#services" class="text-gray-400 hover:text-white transition-colors" data-i18n="navigation.services">Služby</a></li>
+            <li><a href="index.html#technologies" class="text-gray-400 hover:text-white transition-colors" data-i18n="navigation.technologies">Technologie</a></li>
           </ul>
         </div>
       </div>
       
       <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-        <p>&copy; 2024 C10D s.r.o. Všechna práva vyhrazena.</p>
+        <p>&copy; 2024 C10D s.r.o. <span data-i18n="footer.copyright">Všechna práva vyhrazena.</span></p>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/dist/umd/i18next.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.1/dist/umd/i18nextHttpBackend.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
   <script src="js/translations.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Watch for isOpen changes to manage body scroll
-      document.addEventListener('alpine:init', () => {
-        Alpine.data('navigation', () => ({
-          isOpen: false,
-          init() {
-            this.$watch('isOpen', (value) => {
-              document.body.style.overflow = value ? 'hidden' : '';
-            });
-          }
-        }));
-      });
-
-      // Close menu on resize if needed
-      window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024) {
-          const scope = Alpine.scope(document.body);
-          if (scope && scope.isOpen) {
-            scope.isOpen = false;
-          }
-        }
-      });
-    });
-  </script>
   <script src="js/main.js"></script>
   <script src="js/modern.js"></script>
   <script src="js/one-page-slide.js"></script>
+
+  <!-- Back to Top Button -->
+  <button 
+    id="backToTop" 
+    class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    aria-label="Zpět nahoru"
+    data-i18n="footer.back_to_top">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
 </body>
 </html>

@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Handle language prefixes by passing the content to the client-side JS
+# If the file doesn't exist with language prefix, serve the file without prefix
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(cs|en|de)/(.+)$ $2 [QSA,L]
+
+# For language roots like /en/ or /de/, serve index.html
+RewriteRule ^(cs|en|de)/?$ index.html [QSA,L]
+
+# For the root index, serve index.html
+RewriteRule ^$ index.html [QSA,L] 

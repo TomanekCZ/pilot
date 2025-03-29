@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt | C10D s.r.o.</title>
-  <meta name="description" content="Kontaktní informace společnosti C10D s.r.o. - specialisté na laserové řezání a zpracování kovů.">
+  <title data-i18n="contact.page.title">Kontakt | C10D s.r.o.</title>
+  <meta name="description" data-i18n="contact.page.description" content="Kontaktní informace společnosti C10D s.r.o. - specialisté na laserové řezání a zpracování kovů.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,25 +16,24 @@
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1d4ed8',
-          },
-        },
-      },
-    }
-  </script>
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/light-theme.css">
+  <link rel="stylesheet" href="css/mobile-menu.css">
   
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
+  
+  <!-- Translation Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/dist/umd/i18next.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.1/dist/umd/i18nextHttpBackend.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="js/translations.js"></script>
+  
+  <!-- Add Alpine.js for reliable menu handling -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="antialiased">
   <!-- Header -->
@@ -55,38 +54,38 @@
         
         <nav class="hidden lg:block" id="main-nav">
           <ul class="flex space-x-8">
-            <li><a href="index.html#hero" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.home">Domů</a></li>
-            <li><a href="index.html#about" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.about">O nás</a></li>
-            <li><a href="index.html#services" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.services">Služby</a></li>
-            <li><a href="index.html#technologies" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.technologies">Technologie</a></li>
-            <li><a href="index.html#certifications" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.certifications">Certifikace</a></li>
-            <li><a href="index.html#projects" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.euProjects">Dotace EU</a></li>
-            <li><a href="index.html#gallery" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.gallery">Galerie</a></li>
-            <li><a href="index.html#career" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.career">Kariéra</a></li>
-            <li><a href="contact.html" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-blue-400" data-key="nav.contact">Kontakt</a></li>
+            <li><a href="index.html" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.home">Domů</a></li>
+            <li><a href="index.html#about" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.about">O nás</a></li>
+            <li><a href="index.html#services" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.services">Služby</a></li>
+            <li><a href="index.html#technologies" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.technologies">Technologie</a></li>
+            <li><a href="index.html#certifications" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.certifications">Certifikace</a></li>
+            <li><a href="index.html#projects" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.projects">Dotace EU</a></li>
+            <li><a href="gallery.html" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.gallery">Galerie</a></li>
+            <li><a href="career.html" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-i18n="navigation.career">Kariéra</a></li>
+            <li><a href="contact.html" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-blue-400" data-i18n="navigation.contact">Kontakt</a></li>
           </ul>
         </nav>
         
         <div class="hidden lg:block lg:absolute lg:right-4">
-          <div class="relative group">
-            <button class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors">
-              <img class="w-5 h-5" src="images/flags/cs.svg" alt="Čeština">
-              <span>CZ</span>
+          <div class="language-switcher">
+            <button class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors ml-auto current-language">
+              <img class="w-5 h-5" src="/images/flags/cs.svg" alt="Language flag">
+              <span class="uppercase">CZ</span>
               <i class="fas fa-chevron-down text-xs ml-1"></i>
             </button>
-            <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right">
+            <div class="language-dropdown">
               <div class="py-1">
                 <a href="#" data-lang="cs" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  <img class="w-5 h-5 mr-2" src="images/flags/cs.svg" alt="Čeština">
-                  <span>Čeština</span>
+                  <img class="w-5 h-5 mr-2" src="/images/flags/cs.svg" alt="Čeština">
+                  <span data-i18n="languages.cs">Čeština</span>
                 </a>
                 <a href="#" data-lang="en" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  <img class="w-5 h-5 mr-2" src="images/flags/gb.svg" alt="English">
-                  <span>English</span>
+                  <img class="w-5 h-5 mr-2" src="/images/flags/gb.svg" alt="English">
+                  <span data-i18n="languages.en">English</span>
                 </a>
                 <a href="#" data-lang="de" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  <img class="w-5 h-5 mr-2" src="images/flags/de.svg" alt="Deutsch">
-                  <span>Deutsch</span>
+                  <img class="w-5 h-5 mr-2" src="/images/flags/de.svg" alt="Deutsch">
+                  <span data-i18n="languages.de">Deutsch</span>
                 </a>
               </div>
             </div>
@@ -100,16 +99,39 @@
   <div class="lg:hidden fixed inset-0 bg-slate-900/95 backdrop-blur-sm z-40 hidden" id="mobile-menu">
     <div class="container mx-auto px-4 py-16">
       <nav class="flex flex-col items-center space-y-6">
-        <a href="index.html#hero" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.home">Domů</a>
-        <a href="index.html#about" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.about">O nás</a>
-        <a href="index.html#services" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.services">Služby</a>
-        <a href="index.html#technologies" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.technologies">Technologie</a>
-        <a href="index.html#certifications" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.certifications">Certifikace</a>
-        <a href="index.html#projects" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.euProjects">Dotace EU</a>
-        <a href="index.html#gallery" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.gallery">Galerie</a>
-        <a href="index.html#career" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.career">Kariéra</a>
-        <a href="contact.html" class="text-white text-xl border-b-2 border-blue-400" data-key="nav.contact">Kontakt</a>
+        <a href="index.html" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.home">Domů</a>
+        <a href="index.html#about" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.about">O nás</a>
+        <a href="index.html#services" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.services">Služby</a>
+        <a href="index.html#technologies" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.technologies">Technologie</a>
+        <a href="index.html#certifications" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.certifications">Certifikace</a>
+        <a href="index.html#projects" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.projects">Dotace EU</a>
+        <a href="gallery.html" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.gallery">Galerie</a>
+        <a href="career.html" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.career">Kariéra</a>
+        <a href="contact.html" class="text-white text-xl border-b-2 border-blue-400" data-i18n="navigation.contact">Kontakt</a>
       </nav>
+    </div>
+  </div>
+
+  <!-- Mobile Language Switcher -->
+  <div class="mobile-language-switcher">
+    <button class="flex items-center space-x-2 text-white current-language">
+      <img src="/images/flags/cs.svg" alt="Čeština" class="w-5 h-5">
+      <span>CZ</span>
+      <i class="fas fa-chevron-down text-xs ml-1"></i>
+    </button>
+    <div class="language-dropdown">
+      <a href="#" data-lang="cs" class="flex items-center text-white py-2">
+        <img class="w-5 h-5 mr-2" src="/images/flags/cs.svg" alt="Čeština">
+        <span data-i18n="languages.cs">Čeština</span>
+      </a>
+      <a href="#" data-lang="en" class="flex items-center text-white py-2">
+        <img class="w-5 h-5 mr-2" src="/images/flags/gb.svg" alt="English">
+        <span data-i18n="languages.en">English</span>
+      </a>
+      <a href="#" data-lang="de" class="flex items-center text-white py-2">
+        <img class="w-5 h-5 mr-2" src="/images/flags/de.svg" alt="Deutsch">
+        <span data-i18n="languages.de">Deutsch</span>
+      </a>
     </div>
   </div>
 
@@ -117,8 +139,8 @@
   <section class="pt-32 pb-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Kontaktní informace</h1>
-        <p class="text-lg text-gray-300">Jsme tu pro vás. Neváhejte nás kontaktovat.</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4" data-i18n="contact.title">Kontaktní informace</h1>
+        <p class="text-lg text-gray-300" data-i18n="contact.subtitle">Jsme tu pro vás. Neváhejte nás kontaktovat.</p>
       </div>
     </div>
   </section>
@@ -131,7 +153,7 @@
           <!-- Contact Information -->
           <div class="space-y-8">
             <div class="bg-white rounded-xl shadow-sm p-8">
-              <h2 class="text-2xl font-bold text-slate-900 mb-6">Kontaktní údaje</h2>
+              <h2 class="text-2xl font-bold text-slate-900 mb-6" data-i18n="contact.info.title">Kontaktní údaje</h2>
               
               <div class="space-y-6">
                 <!-- Sídlo firmy -->
@@ -140,10 +162,10 @@
                     <i class="fas fa-building text-blue-600"></i>
                   </div>
                   <div class="ml-4">
-                    <h3 class="font-semibold text-slate-900">Sídlo firmy</h3>
-                    <p class="text-slate-600">C10D s.r.o.</p>
-                    <p class="text-slate-600">28.října 141</p>
-                    <p class="text-slate-600">Klimkovice 742 83</p>
+                    <h3 class="font-semibold text-slate-900" data-i18n="contact.info.headquarters">Sídlo firmy</h3>
+                    <p class="text-slate-600" data-i18n="contact.info.company_name">C10D s.r.o.</p>
+                    <p class="text-slate-600" data-i18n="contact.info.street">28.října 141</p>
+                    <p class="text-slate-600" data-i18n="contact.info.city">Klimkovice 742 83</p>
                   </div>
                 </div>
 
@@ -153,10 +175,10 @@
                     <i class="fas fa-industry text-blue-600"></i>
                   </div>
                   <div class="ml-4">
-                    <h3 class="font-semibold text-slate-900">Provozovna</h3>
-                    <p class="text-slate-600">C10D s.r.o.</p>
-                    <p class="text-slate-600">Rybníčky 2285/31</p>
-                    <p class="text-slate-600">Nový Jičín 741 01</p>
+                    <h3 class="font-semibold text-slate-900" data-i18n="contact.info.facility">Provozovna</h3>
+                    <p class="text-slate-600" data-i18n="contact.info.company_name">C10D s.r.o.</p>
+                    <p class="text-slate-600" data-i18n="contact.info.facility_street">Rybníčky 2285/31</p>
+                    <p class="text-slate-600" data-i18n="contact.info.facility_city">Nový Jičín 741 01</p>
                   </div>
                 </div>
 
@@ -166,10 +188,10 @@
                     <i class="fas fa-file-invoice text-blue-600"></i>
                   </div>
                   <div class="ml-4">
-                    <h3 class="font-semibold text-slate-900">Fakturační údaje</h3>
-                    <p class="text-slate-600">IČO: 12345678</p>
-                    <p class="text-slate-600">DIČ: CZ12345678</p>
-                    <p class="text-slate-600">Bankovní účet: 123456789/0100</p>
+                    <h3 class="font-semibold text-slate-900" data-i18n="contact.info.billing">Fakturační údaje</h3>
+                    <p class="text-slate-600" data-i18n="contact.info.ico">IČO: 12345678</p>
+                    <p class="text-slate-600" data-i18n="contact.info.dic">DIČ: CZ12345678</p>
+                    <p class="text-slate-600" data-i18n="contact.info.bank">Bankovní účet: 123456789/0100</p>
                   </div>
                 </div>
               </div>
@@ -177,36 +199,36 @@
 
             <!-- Vedení a oddělení -->
             <div class="bg-white rounded-xl shadow-sm p-8">
-              <h2 class="text-2xl font-bold text-slate-900 mb-6">Kontakty na oddělení</h2>
+              <h2 class="text-2xl font-bold text-slate-900 mb-6" data-i18n="contact.departments.title">Kontakty na oddělení</h2>
               
               <div class="grid md:grid-cols-2 gap-8">
                 <!-- Jednatel společnosti -->
                 <div class="space-y-2">
-                  <h3 class="font-semibold text-slate-900">Jednatel společnosti</h3>
-                  <p class="text-slate-800">Václav Lichovník</p>
+                  <h3 class="font-semibold text-slate-900" data-i18n="contact.departments.ceo">Jednatel společnosti</h3>
+                  <p class="text-slate-800" data-i18n="contact.departments.ceo_name">Václav Lichovník</p>
                   <a href="mailto:vaclav.lichovnik@c10d.cz" class="text-blue-600 hover:text-blue-700 flex items-center">
                     <i class="fas fa-envelope mr-2"></i>
-                    vaclav.lichovnik@c10d.cz
+                    <span data-i18n="contact.departments.ceo_email">vaclav.lichovnik@c10d.cz</span>
                   </a>
                 </div>
 
                 <!-- Ředitel společnosti -->
                 <div class="space-y-2">
-                  <h3 class="font-semibold text-slate-900">Ředitel společnosti</h3>
-                  <p class="text-slate-800">Lubomír Helísek</p>
+                  <h3 class="font-semibold text-slate-900" data-i18n="contact.departments.director">Ředitel společnosti</h3>
+                  <p class="text-slate-800" data-i18n="contact.departments.director_name">Lubomír Helísek</p>
                   <a href="mailto:lubomir.helisek@c10d.cz" class="text-blue-600 hover:text-blue-700 flex items-center">
                     <i class="fas fa-envelope mr-2"></i>
-                    lubomir.helisek@c10d.cz
+                    <span data-i18n="contact.departments.director_email">lubomir.helisek@c10d.cz</span>
                   </a>
                   <a href="tel:00420777916724" class="text-blue-600 hover:text-blue-700 flex items-center">
                     <i class="fas fa-phone mr-2"></i>
-                    +420 777 916 724
+                    <span data-i18n="contact.departments.director_phone">+420 777 916 724</span>
                   </a>
                 </div>
 
                 <!-- Obchodní oddělení -->
                 <div class="space-y-2">
-                  <h3 class="font-semibold text-slate-900">Obchodní oddělení</h3>
+                  <h3 class="font-semibold text-slate-900" data-i18n="contact.departments.sales">Obchodní oddělení</h3>
                   <p class="text-slate-800">Ing. Daniel Tvarůžek</p>
                   <a href="mailto:obchod@c10d.cz" class="text-blue-600 hover:text-blue-700 flex items-center">
                     <i class="fas fa-envelope mr-2"></i>
@@ -220,7 +242,7 @@
 
                 <!-- Technické oddělení -->
                 <div class="space-y-2">
-                  <h3 class="font-semibold text-slate-900">Technické oddělení</h3>
+                  <h3 class="font-semibold text-slate-900" data-i18n="contact.departments.technical">Technické oddělení</h3>
                   <p class="text-slate-800">Dominik Skalka</p>
                   <a href="mailto:dominik.skalka@c10d.cz" class="text-blue-600 hover:text-blue-700 flex items-center">
                     <i class="fas fa-envelope mr-2"></i>
@@ -234,7 +256,7 @@
 
                 <!-- Oddělení kvality -->
                 <div class="space-y-2">
-                  <h3 class="font-semibold text-slate-900">Oddělení kvality</h3>
+                  <h3 class="font-semibold text-slate-900" data-i18n="contact.departments.quality">Oddělení kvality</h3>
                   <p class="text-slate-800">Ivan Hranický</p>
                   <a href="mailto:ivan.hranicky@c10d.cz" class="text-blue-600 hover:text-blue-700 flex items-center">
                     <i class="fas fa-envelope mr-2"></i>
@@ -248,7 +270,7 @@
 
                 <!-- Ekonomické oddělení -->
                 <div class="space-y-2">
-                  <h3 class="font-semibold text-slate-900">Ekonomické oddělení</h3>
+                  <h3 class="font-semibold text-slate-900" data-i18n="contact.departments.economic">Ekonomické oddělení</h3>
                   <p class="text-slate-800">Veronika Friedlová</p>
                   <a href="mailto:veronika.friedlova@c10d.cz" class="text-blue-600 hover:text-blue-700 flex items-center">
                     <i class="fas fa-envelope mr-2"></i>
@@ -259,12 +281,12 @@
             </div>
 
             <div class="bg-white rounded-xl shadow-sm p-8">
-              <h2 class="text-2xl font-bold text-slate-900 mb-6">Sociální sítě</h2>
+              <h2 class="text-2xl font-bold text-slate-900 mb-6" data-i18n="contact.social.title">Sociální sítě</h2>
               <div class="flex space-x-4">
-                <a href="#" class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors">
+                <a href="#" class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors" aria-label="Facebook" data-i18n="social.facebook">
                   <i class="fab fa-facebook-f text-blue-600 text-xl"></i>
                 </a>
-                <a href="#" class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors">
+                <a href="#" class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors" aria-label="LinkedIn" data-i18n="social.linkedin">
                   <i class="fab fa-linkedin-in text-blue-600 text-xl"></i>
                 </a>
               </div>
@@ -306,12 +328,16 @@
 
             <div class="space-y-4">
               <div>
-                <h3 class="font-semibold text-slate-900 mb-2">Doprava</h3>
-                <p class="text-slate-600">Provozovna se nachází v průmyslové zóně Nového Jičína. Příjezd je možný po silnici I/57, odbočka na ulici Rybníčky.</p>
+                <h3 class="font-semibold text-slate-900 mb-2" data-i18n="contact.transportation.title">Doprava</h3>
+                <p class="text-slate-600" data-i18n="contact.transportation.description">
+                  Provozovna se nachází v průmyslové zóně Nového Jičína. Příjezd je možný po silnici I/57, odbočka na ulici Rybníčky.
+                </p>
               </div>
               <div>
-                <h3 class="font-semibold text-slate-900 mb-2">Parkování</h3>
-                <p class="text-slate-600">Parkování je k dispozici přímo před budovou společnosti.</p>
+                <h3 class="font-semibold text-slate-900 mb-2" data-i18n="contact.parking.title">Parkování</h3>
+                <p class="text-slate-600" data-i18n="contact.parking.description">
+                  Parkování je k dispozici přímo před budovou společnosti.
+                </p>
               </div>
             </div>
           </div>
@@ -356,55 +382,52 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/translations.js"></script>
-  <script>
-    // Mobile menu functionality
-    const mobileMenuBtn = document.querySelector('.mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const header = document.getElementById('header');
-    
-    let isMenuOpen = false;
-    
-    // Toggle menu function
-    const toggleMenu = (show) => {
-      isMenuOpen = show;
-      mobileMenuBtn.setAttribute('aria-expanded', show);
-      mobileMenu.classList.toggle('hidden', !show);
-      document.body.classList.toggle('overflow-hidden', show);
-    };
-    
-    // Toggle menu on button click
-    mobileMenuBtn.addEventListener('click', () => {
-      toggleMenu(!isMenuOpen);
-    });
-
-    // Close menu when clicking a link
-    const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
-    mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent immediate navigation
-        toggleMenu(false);
-        setTimeout(() => {
-          window.location.href = link.href;
-        }, 300); // Delay navigation to allow menu animation to complete
-      });
-    });
-
-    // Header scroll behavior
-    let lastScroll = 0;
-    
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      
-      if (currentScroll <= 0) {
-        header.classList.remove('shadow-lg');
-      } else {
-        header.classList.add('shadow-lg');
-      }
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/modern.js"></script>
   <script src="js/one-page-slide.js"></script>
+  
+  <!-- Language initialization script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async function() {
+      // Language initializations
+      // Check if translations are already loaded
+      if (typeof loadTranslations === 'function') {
+        await loadTranslations();
+
+        // Get current language from URL or localStorage
+        const currentLang = getCurrentLanguage();
+        
+        // Set the HTML language attribute
+        document.documentElement.lang = currentLang;
+        
+        // Update content with translations
+        await updateContent(currentLang);
+        
+        // Set up language switcher click handlers
+        document.querySelectorAll('[data-lang]').forEach(button => {
+          button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const lang = button.getAttribute('data-lang');
+            changeLanguage(lang);
+          });
+        });
+        
+        // Update the language switcher UI
+        updateLanguageUI();
+      }
+    });
+
+    // Toggle mobile language dropdown
+    const mobileLangButton = document.querySelector('.mobile-language-switcher .current-language');
+    const mobileLangDropdown = document.querySelector('.mobile-language-switcher .language-dropdown');
+    
+    if (mobileLangButton && mobileLangDropdown) {
+      mobileLangButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        mobileLangDropdown.classList.toggle('hidden');
+      });
+    }
+  </script>
 </body>
 </html> 

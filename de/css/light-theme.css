@@ -1,0 +1,496 @@
+/* 
+  C10D s.r.o. Website Light Theme
+  Modern, light one-page slide design
+  Version: 1.0
+*/
+
+/* ---------- Base Variables Override ---------- */
+:root {
+  /* Light Theme Color Palette */
+  --primary: #d7141a;
+  --secondary: #11457e;
+  --dark: #333333;
+  --dark-gray: #555555;
+  --mid-gray: #777777;
+  --light-gray: #eeeeee;
+  --white: #ffffff;
+  --off-white: #f8f9fa;
+  --light-blue: #e9f0f7;
+  --light-red: #fdf0f0;
+  
+  /* Shadows for light theme */
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Global Light Theme Overrides ---------- */
+body {
+  background-color: var(--white);
+  color: var(--dark);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+/* Remove conflicting header styles */
+header {
+  transition: all 0.3s ease;
+}
+
+/* ---------- One-Page Slide Sections ---------- */
+section {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  position: relative;
+  scroll-snap-align: start;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Hero section styles */
+section.hero-section {
+  min-height: 27vh;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Hero Section Light Theme ---------- */
+.hero-section {
+  background: linear-gradient(135deg, var(--light-blue), var(--white));
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section:before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(215, 20, 26, 0.1) 0%, rgba(215, 20, 26, 0) 70%);
+}
+
+.hero-section:after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(17, 69, 126, 0.1) 0%, rgba(17, 69, 126, 0) 70%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: var(--dark);
+  font-weight: 700;
+  line-height: 1.2;
+  /* Ensure text is readable on gradient background */
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--dark-gray);
+  /* Ensure text is readable on gradient background */
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Ensure button text is visible on all backgrounds */
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-outline:hover {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+/* ---------- About Section Light Theme ---------- */
+.about-section {
+  background-color: var(--white);
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+/* ---------- Services Section Light Theme ---------- */
+.services-section {
+  background-color: var(--light-blue);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.service-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--dark);
+}
+
+.service-card p {
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+}
+
+.service-image {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.service-image img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.05);
+}
+
+/* ---------- Tech Preview Section Light Theme ---------- */
+.tech-preview-section {
+  background-color: var(--white);
+}
+
+.tech-preview-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+
+.tech-preview-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tech-preview-image {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.tech-preview-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.tech-preview-image:hover img {
+  transform: scale(1.03);
+}
+
+/* ---------- CTA Section Light Theme ---------- */
+.cta-section {
+  background: linear-gradient(135deg, var(--light-red), var(--light-blue));
+  text-align: center;
+  padding: 80px 0;
+}
+
+/* ---------- Contact Section Light Theme ---------- */
+.contact-section {
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--dark-gray);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-section .btn {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  /* Ensure text is visible on all backgrounds */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section .btn:hover {
+  background-color: var(--dark);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Footer Light Theme ---------- */
+footer {
+  background-color: var(--light-gray);
+  color: var(--dark);
+  padding: 60px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo img {
+  height: 40px;
+  margin-bottom: 20px;
+  /* Changed filter to make logo visible on light background */
+  filter: brightness(0) saturate(100%) invert(15%) sepia(75%) saturate(6000%) hue-rotate(350deg) brightness(95%) contrast(100%);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex: 2;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: var(--dark-gray);
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: var(--primary);
+}
+
+.footer-contact {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-contact p {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--dark); /* Improved contrast from light-gray to dark */
+}
+
+.footer-contact i {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 1s ease forwards;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .section-title h2 {
+    font-size: 2.2rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+  
+  section.hero-section {
+    min-height: auto;
+    padding: 100px 15px 40px;
+    margin-bottom: 0;
+  }
+  
+  .hero-content {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+  
+  .section-title {
+    margin-bottom: 30px;
+  }
+  
+  .about-content,
+  .tech-preview-content {
+    flex-direction: column;
+  }
+}

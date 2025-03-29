@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galerie | C10D s.r.o.</title>
-  <meta name="description" content="Prohlédněte si naše projekty a realizace v oblasti průmyslové kovovýroby a laserového řezání.">
+  <title data-i18n="gallery.page.title">Galerie | C10D s.r.o.</title>
+  <meta name="description" data-i18n="gallery.page.description" content="Prohlédněte si naše projekty a realizace v oblasti průmyslové kovovýroby a laserového řezání.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,25 +16,24 @@
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1d4ed8',
-          },
-        },
-      },
-    }
-  </script>
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/light-theme.css">
+  <link rel="stylesheet" href="css/mobile-menu.css">
   
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
+
+  <!-- Translation Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/dist/umd/i18next.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.1/dist/umd/i18nextHttpBackend.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="js/translations.js"></script>
+  
+  <!-- Add Alpine.js for reliable menu handling -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   <style>
     /* Hamburger menu icon styles */
@@ -66,11 +65,11 @@
   <header id="header" class="fixed w-full bg-slate-900 z-50 shadow-lg">
     <div class="container mx-auto px-4 py-4">
       <div class="flex items-center justify-between lg:justify-center relative">
-        <a href="index.html" class="logo transition-transform hover:scale-105 duration-300 lg:absolute lg:left-4">
+        <a href="index.html" class="logo transition-transform hover:scale-105 duration-300 md:absolute md:left-4">
           <img src="images/new-logo-white.svg" alt="C10D s.r.o. logo" id="header-logo" class="h-10 w-auto">
         </a>
         
-        <button class="lg:hidden mobile-menu-toggle focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+        <button class="md:hidden mobile-menu-toggle focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
           <div class="space-y-2">
             <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
             <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
@@ -78,40 +77,40 @@
           </div>
         </button>
         
-        <nav class="hidden lg:block" id="main-nav">
-          <ul class="flex space-x-8">
-            <li><a href="index.html" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.home">Domů</a></li>
-            <li><a href="index.html#about" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.about">O nás</a></li>
-            <li><a href="index.html#services" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.services">Služby</a></li>
-            <li><a href="index.html#technologies" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.technologies">Technologie</a></li>
-            <li><a href="index.html#certifications" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.certifications">Certifikace</a></li>
-            <li><a href="index.html#projects" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.projects">Dotace EU</a></li>
-            <li><a href="index.html#gallery" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.gallery">Galerie</a></li>
-            <li><a href="index.html#career" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.career">Kariéra</a></li>
-            <li><a href="index.html#contact" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400" data-key="nav.contact">Kontakt</a></li>
+        <nav class="hidden md:block" id="main-nav">
+          <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 lg:space-x-8">
+            <li><a href="index.html" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400 text-sm md:text-base" data-i18n="navigation.home">Domů</a></li>
+            <li><a href="index.html#about" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400 text-sm md:text-base" data-i18n="navigation.about">O nás</a></li>
+            <li><a href="index.html#services" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400 text-sm md:text-base" data-i18n="navigation.services">Služby</a></li>
+            <li><a href="index.html#technologies" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400 text-sm md:text-base" data-i18n="navigation.technologies">Technologie</a></li>
+            <li><a href="index.html#certifications" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400 text-sm md:text-base" data-i18n="navigation.certifications">Certifikace</a></li>
+            <li><a href="index.html#projects" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400 text-sm md:text-base" data-i18n="navigation.projects">Dotace EU</a></li>
+            <li><a href="gallery.html" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-blue-400 text-sm md:text-base" data-i18n="navigation.gallery">Galerie</a></li>
+            <li><a href="career.html" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400 text-sm md:text-base" data-i18n="navigation.career">Kariéra</a></li>
+            <li><a href="contact.html" class="text-white hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400 text-sm md:text-base" data-i18n="navigation.contact">Kontakt</a></li>
           </ul>
         </nav>
         
-        <div class="hidden lg:block lg:absolute lg:right-4">
-          <div class="relative group">
-            <button class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors">
-              <img class="w-5 h-5" src="images/flags/cs.svg" alt="Čeština">
-              <span>CZ</span>
+        <div class="hidden md:block md:absolute md:right-4">
+          <div class="language-switcher">
+            <button class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors ml-auto current-language">
+              <img class="w-5 h-5" src="/images/flags/cs.svg" alt="Language flag">
+              <span class="uppercase">CZ</span>
               <i class="fas fa-chevron-down text-xs ml-1"></i>
             </button>
-            <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right">
+            <div class="language-dropdown">
               <div class="py-1">
                 <a href="#" data-lang="cs" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  <img class="w-5 h-5 mr-2" src="images/flags/cs.svg" alt="Čeština">
-                  <span>Čeština</span>
+                  <img class="w-5 h-5 mr-2" src="/images/flags/cs.svg" alt="Čeština">
+                  <span data-i18n="languages.cs">Čeština</span>
                 </a>
                 <a href="#" data-lang="en" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  <img class="w-5 h-5 mr-2" src="images/flags/gb.svg" alt="English">
-                  <span>English</span>
+                  <img class="w-5 h-5 mr-2" src="/images/flags/gb.svg" alt="English">
+                  <span data-i18n="languages.en">English</span>
                 </a>
                 <a href="#" data-lang="de" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  <img class="w-5 h-5 mr-2" src="images/flags/de.svg" alt="Deutsch">
-                  <span>Deutsch</span>
+                  <img class="w-5 h-5 mr-2" src="/images/flags/de.svg" alt="Deutsch">
+                  <span data-i18n="languages.de">Deutsch</span>
                 </a>
               </div>
             </div>
@@ -122,18 +121,18 @@
   </header>
 
   <!-- Mobile Menu -->
-  <div class="lg:hidden fixed inset-0 bg-slate-900/95 backdrop-blur-sm z-40 hidden" id="mobile-menu">
+  <div class="md:hidden fixed inset-0 bg-slate-900/95 backdrop-blur-sm z-40 hidden" id="mobile-menu">
     <div class="container mx-auto px-4 py-16">
       <nav class="flex flex-col items-center space-y-6">
-        <a href="index.html" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.home">Domů</a>
-        <a href="index.html#about" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.about">O nás</a>
-        <a href="index.html#services" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.services">Služby</a>
-        <a href="index.html#technologies" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.technologies">Technologie</a>
-        <a href="index.html#certifications" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.certifications">Certifikace</a>
-        <a href="index.html#projects" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.projects">Dotace EU</a>
-        <a href="index.html#gallery" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.gallery">Galerie</a>
-        <a href="index.html#career" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.career">Kariéra</a>
-        <a href="index.html#contact" class="text-white text-xl hover:text-blue-400 transition-colors" data-key="nav.contact">Kontakt</a>
+        <a href="index.html" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.home">Domů</a>
+        <a href="index.html#about" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.about">O nás</a>
+        <a href="index.html#services" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.services">Služby</a>
+        <a href="index.html#technologies" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.technologies">Technologie</a>
+        <a href="index.html#certifications" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.certifications">Certifikace</a>
+        <a href="index.html#projects" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.projects">Dotace EU</a>
+        <a href="gallery.html" class="text-white text-xl border-b-2 border-blue-400" data-i18n="navigation.gallery">Galerie</a>
+        <a href="career.html" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.career">Kariéra</a>
+        <a href="contact.html" class="text-white text-xl hover:text-blue-400 transition-colors" data-i18n="navigation.contact">Kontakt</a>
       </nav>
     </div>
   </div>
@@ -142,8 +141,8 @@
   <section class="pt-32 pb-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Galerie našich projektů</h1>
-        <p class="text-lg text-gray-300">Vyberte si kategorii, kterou chcete zobrazit</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4" data-i18n="gallery.page.heading">Galerie našich projektů</h1>
+        <p class="text-lg text-gray-300" data-i18n="gallery.page.subheading">Vyberte si kategorii, kterou chcete zobrazit</p>
       </div>
     </div>
   </section>
@@ -153,25 +152,25 @@
       <!-- Category Filters -->
       <div class="mb-12">
         <div class="flex flex-wrap gap-4 justify-center">
-          <button class="filter-btn active px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors" data-category="all">
+          <button class="filter-btn active px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors" data-category="all" data-i18n="gallery.filters.all">
             Všechny
           </button>
-          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="laser">
+          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="laser" data-i18n="gallery.filters.laser_cutting">
             Laserové řezání
           </button>
-          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="ohranovaci-lisy">
+          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="ohranovaci-lisy" data-i18n="gallery.filters.bending">
             Ohraňovací lisy
           </button>
-          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="obrabeci-stroje">
+          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="obrabeci-stroje" data-i18n="gallery.filters.machining">
             Obráběcí stroje
           </button>
-          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="svarovani">
+          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="svarovani" data-i18n="gallery.filters.welding">
             Svařování
           </button>
-          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="vrtani">
+          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="vrtani" data-i18n="gallery.filters.drilling">
             Vrtání
           </button>
-          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="areal">
+          <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" data-category="areal" data-i18n="gallery.filters.premises">
             Areál
           </button>
         </div>
@@ -195,16 +194,16 @@
   <div id="gallery-modal" class="fixed inset-0 z-50 hidden">
     <div class="absolute inset-0 bg-black/90 backdrop-blur-sm" id="modal-backdrop"></div>
     <div class="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
-      <!-- Close button - larger for mobile -->
-      <button id="gallery-close" class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center text-white hover:text-gray-300 bg-black/50 rounded-full z-20">
+      <!-- Close button -->
+      <button id="gallery-close" class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center text-white hover:text-gray-300 bg-black/50 rounded-full z-20" aria-label="Close gallery" data-i18n="gallery.modal.close">
         <i class="fas fa-times text-2xl"></i>
       </button>
       
-      <!-- Navigation buttons - semi-transparent background for better visibility -->
-      <button id="gallery-prev" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center text-white hover:text-gray-300 bg-black/50 rounded-full z-20 md:hidden">
+      <!-- Navigation buttons -->
+      <button id="gallery-prev" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center text-white hover:text-gray-300 bg-black/50 rounded-full z-20 md:hidden" aria-label="Previous image" data-i18n="gallery.modal.previous">
         <i class="fas fa-chevron-left text-xl"></i>
       </button>
-      <button id="gallery-next" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center text-white hover:text-gray-300 bg-black/50 rounded-full z-20 md:hidden">
+      <button id="gallery-next" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center text-white hover:text-gray-300 bg-black/50 rounded-full z-20 md:hidden" aria-label="Next image" data-i18n="gallery.modal.next">
         <i class="fas fa-chevron-right text-xl"></i>
       </button>
       
@@ -274,7 +273,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/translations.js"></script>
   <script>
     // Mobile menu functionality
     const mobileMenuBtn = document.querySelector('.mobile-menu-toggle');
@@ -449,6 +447,84 @@
       // Call initGallery when images are loaded
       window.addEventListener('load', initGallery);
     });
+  </script>
+
+  <!-- Mobile language switcher -->
+  <div class="mobile-language-switcher">
+    <button class="flex items-center space-x-2 text-white current-language">
+      <img src="/images/flags/cs.svg" alt="Čeština" class="w-5 h-5">
+      <span>CZ</span>
+      <i class="fas fa-chevron-down text-xs ml-1"></i>
+    </button>
+    <div class="language-dropdown">
+      <a href="#" data-lang="cs" class="flex items-center text-white py-2">
+        <img class="w-5 h-5 mr-2" src="/images/flags/cs.svg" alt="Čeština">
+        <span data-i18n="languages.cs">Čeština</span>
+      </a>
+      <a href="#" data-lang="en" class="flex items-center text-white py-2">
+        <img class="w-5 h-5 mr-2" src="/images/flags/gb.svg" alt="English">
+        <span data-i18n="languages.en">English</span>
+      </a>
+      <a href="#" data-lang="de" class="flex items-center text-white py-2">
+        <img class="w-5 h-5 mr-2" src="/images/flags/de.svg" alt="Deutsch">
+        <span data-i18n="languages.de">Deutsch</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Language initialization script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async function() {
+      // Language initializations
+      // Check if translations are already loaded
+      if (typeof loadTranslations === 'function') {
+        await loadTranslations();
+
+        // Get current language from URL or localStorage
+        const currentLang = getCurrentLanguage();
+        
+        // Set the HTML language attribute
+        document.documentElement.lang = currentLang;
+        
+        // Update content with translations
+        await updateContent(currentLang);
+        
+        // Set up language switcher click handlers
+        document.querySelectorAll('[data-lang]').forEach(button => {
+          button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const lang = button.getAttribute('data-lang');
+            changeLanguage(lang);
+          });
+        });
+        
+        // Update the language switcher UI
+        updateLanguageUI();
+      }
+    });
+
+    // Toggle mobile language dropdown
+    const mobileLangButton = document.querySelector('.mobile-language-switcher .current-language');
+    const mobileLangDropdown = document.querySelector('.mobile-language-switcher .language-dropdown');
+    
+    if (mobileLangButton && mobileLangDropdown) {
+      mobileLangButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        mobileLangDropdown.classList.toggle('hidden');
+      });
+    }
+  </script>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modern.js"></script>
+  <script src="js/one-page-slide.js"></script>
+  <script src="gallery.js"></script>
+  
+  <!-- Language initialization script -->
+  <script>
+    // ... existing language initialization code ...
   </script>
 </body>
 </html> 

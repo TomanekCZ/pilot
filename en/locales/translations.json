@@ -1,0 +1,1165 @@
+{
+  "meta": {
+    "title": {
+      "cs": "C10D s.r.o. | Průmyslové kovovýroba a laserové řezání",
+      "en": "C10D s.r.o. | Industrial Metal Manufacturing and Laser Cutting",
+      "de": "C10D s.r.o. | Industrielle Metallverarbeitung und Laserschneiden"
+    },
+    "description": {
+      "cs": "C10D s.r.o. - Profesionální kovovýroba, laserové řezání a ohýbání plechů s více než 30 lety zkušeností.",
+      "en": "C10D s.r.o. - Professional metal manufacturing, laser cutting and sheet metal bending with over 30 years of experience.",
+      "de": "C10D s.r.o. - Professionelle Metallverarbeitung, Laserschneiden und Blechbiegen mit über 30 Jahren Erfahrung."
+    }
+  },
+  "languages": {
+    "cs": {
+      "cs": "Čeština",
+      "en": "Czech",
+      "de": "Tschechisch"
+    },
+    "en": {
+      "cs": "Angličtina",
+      "en": "English",
+      "de": "Englisch"
+    },
+    "de": {
+      "cs": "Němčina",
+      "en": "German",
+      "de": "Deutsch"
+    }
+  },
+  "navigation": {
+    "home": {
+      "cs": "Domů",
+      "en": "Home",
+      "de": "Startseite"
+    },
+    "about": {
+      "cs": "O nás",
+      "en": "About",
+      "de": "Über uns"
+    },
+    "services": {
+      "cs": "Služby",
+      "en": "Services",
+      "de": "Dienstleistungen"
+    },
+    "technologies": {
+      "cs": "Technologie",
+      "en": "Technologies",
+      "de": "Technologien"
+    },
+    "certifications": {
+      "cs": "Certifikace",
+      "en": "Certifications",
+      "de": "Zertifizierungen"
+    },
+    "projects": {
+      "cs": "Dotace EU",
+      "en": "EU Grants",
+      "de": "EU-Förderungen"
+    },
+    "gallery": {
+      "cs": "Galerie",
+      "en": "Gallery",
+      "de": "Galerie"
+    },
+    "career": {
+      "cs": "Kariéra",
+      "en": "Career",
+      "de": "Karriere"
+    },
+    "contact": {
+      "cs": "Kontakt",
+      "en": "Contact",
+      "de": "Kontakt"
+    },
+    "menu": {
+      "cs": "Menu",
+      "en": "Menu",
+      "de": "Menü"
+    },
+    "menu_button": {
+      "cs": "Menu",
+      "en": "Menu",
+      "de": "Menü"
+    }
+  },
+  "hero": {
+    "title": {
+      "cs": "Přesné řezání laserem a zpracování kovů",
+      "en": "Precision Laser Cutting and Metal Processing",
+      "de": "Präzisions-Laserschneiden und Metallverarbeitung"
+    },
+    "subtitle": {
+      "cs": "Špičková technologie a více než 30 let zkušeností ve strojírenské výrobě a zpracování plechů.",
+      "en": "Cutting-edge technology and over 30 years of experience in engineering and sheet metal processing.",
+      "de": "Modernste Technologie und über 30 Jahre Erfahrung in der Maschinenbau- und Blechverarbeitung."
+    },
+    "button1": {
+      "cs": "Naše technologie",
+      "en": "Our Technologies",
+      "de": "Unsere Technologien"
+    },
+    "button2": {
+      "cs": "Kontaktujte nás",
+      "en": "Contact Us",
+      "de": "Kontaktieren Sie uns"
+    }
+  },
+  "home": {
+    "about": {
+      "title": {
+        "cs": "O společnosti C10D",
+        "en": "About C10D",
+        "de": "Über C10D"
+      },
+      "subtitle": {
+        "cs": "Společnost je od svého vzniku v roce 2011 zaměřená na všeobecnou realizaci projektů ve strojírenském průmyslu.",
+        "en": "Since its establishment in 2011, the company has focused on general project implementation in the engineering industry.",
+        "de": "Seit ihrer Gründung im Jahr 2011 konzentriert sich das Unternehmen auf die allgemeine Projektrealisierung in der Maschinenbauindustrie."
+      },
+      "paragraph1": {
+        "cs": "Realizujeme komplexní výrobní procesy od dělení plechů přes svařování od menších celků až po velké podvozkové rámy na návěsy kamionů. Následné povrchové úpravy dle požadavků našich zákazníků nabízíme prostřednictvím našich dlouhodobých obchodních partnerů.",
+        "en": "We implement comprehensive manufacturing processes from sheet metal cutting through welding from smaller units to large chassis frames for truck trailers. We offer subsequent surface treatments according to our customers' requirements through our long-term business partners.",
+        "de": "Wir realisieren umfassende Fertigungsprozesse vom Blechzuschnitt über das Schweißen von kleineren Einheiten bis hin zu großen Fahrgestellrahmen für LKW-Anhänger. Nachfolgende Oberflächenbehandlungen nach Kundenwunsch bieten wir über unsere langjährigen Geschäftspartner an."
+      },
+      "paragraph2": {
+        "cs": "Předností naší společnosti je nabídka širokého portfolia služeb v té nejlepší kvalitě a krátkém čase. Rychlost, pružnost a vysoká kvalita je realizována v týmu 25 profesionálních pracovníků společnosti s prioritou na spokojenost zákazníka.",
+        "en": "The advantage of our company is offering a wide portfolio of services in the best quality and short time. Speed, flexibility and high quality is implemented by a team of 25 professional company employees with priority on customer satisfaction.",
+        "de": "Der Vorteil unseres Unternehmens ist das Angebot eines breiten Portfolios an Dienstleistungen in bester Qualität und kurzer Zeit. Schnelligkeit, Flexibilität und hohe Qualität werden von einem Team von 25 professionellen Mitarbeitern mit Priorität auf Kundenzufriedenheit umgesetzt."
+      },
+      "paragraph3": {
+        "cs": "Vysoká profesní a odborná úroveň společně s bohatě vybaveným technologickým zázemím nám umožňuje pružně reagovat na vývoj a potřeby v oblasti strojírenského průmyslu. V současné době se specializujeme především na zakázkovou výrobu pro zpracování plechů s využitím CNC technologií. K realizaci zakázek nám slouží vlastní výrobní haly.",
+        "en": "High professional and technical level together with well-equipped technological background allows us to flexibly respond to developments and needs in the engineering industry. Currently, we specialize mainly in custom production for sheet metal processing using CNC technologies. We use our own production halls for order realization.",
+        "de": "Ein hohes professionelles und technisches Niveau zusammen mit einer gut ausgestatteten technologischen Infrastruktur ermöglicht es uns, flexibel auf Entwicklungen und Bedürfnisse in der Maschinenbauindustrie zu reagieren. Derzeit spezialisieren wir uns hauptsächlich auf die kundenspezifische Produktion für die Blechbearbeitung mit CNC-Technologien. Wir nutzen unsere eigenen Produktionshallen für die Auftragsabwicklung."
+      }
+    },
+    "services": {
+      "title": {
+        "cs": "Naše služby",
+        "en": "Our Services",
+        "de": "Unsere Dienstleistungen"
+      },
+      "laser": {
+        "title": {
+          "cs": "Laserové řezání",
+          "en": "Laser Cutting",
+          "de": "Laserschneiden"
+        },
+        "description": {
+          "cs": "(pro max. formáty plechů 2 000*6 000mm)",
+          "en": "(for max. sheet formats 2,000*6,000mm)",
+          "de": "(für max. Blechformate 2.000*6.000mm)"
+        }
+      },
+      "bending": {
+        "title": {
+          "cs": "CNC ohraňování",
+          "en": "CNC Bending",
+          "de": "CNC-Biegen"
+        },
+        "description": {
+          "cs": "(pro max. délku 6 000mm / 400t)",
+          "en": "(for max. length 6,000mm / 400t)",
+          "de": "(für max. Länge 6.000mm / 400t)"
+        }
+      },
+      "welding": {
+        "title": {
+          "cs": "Svařování",
+          "en": "Welding",
+          "de": "Schweißen"
+        },
+        "description": {
+          "cs": "(Invertory Fronius)",
+          "en": "(Fronius Inverters)",
+          "de": "(Fronius Inverter)"
+        }
+      },
+      "machining": {
+        "title": {
+          "cs": "Třískové obrábění",
+          "en": "Machining",
+          "de": "Zerspannung"
+        },
+        "description": {
+          "cs": "(soustruh, frézka, pásová pila, vyvrtávačka, vrtačka, brusky)",
+          "en": "(lathe, milling machine, band saw, boring machine, drill, grinders)",
+          "de": "(Drehmaschine, Fräsmaschine, Bandsäge, Bohrwerk, Bohrmaschine, Schleifmaschinen)"
+        }
+      }
+    }
+  },
+  "error": {
+    "404": {
+      "title": {
+        "cs": "Stránka nenalezena",
+        "de": "Seite nicht gefunden",
+        "en": "Page Not Found"
+      },
+      "message": {
+        "cs": "Omlouváme se, ale požadovaná stránka nebyla nalezena.",
+        "de": "Entschuldigung, aber die angeforderte Seite wurde nicht gefunden.",
+        "en": "Sorry, but the requested page was not found."
+      },
+      "back": {
+        "cs": "Zpět na hlavní stránku",
+        "de": "Zurück zur Startseite",
+        "en": "Back to Homepage"
+      }
+    }
+  },
+  "technologies": {
+    "title": {
+      "cs": "Naše technologie",
+      "de": "Unsere Technologien",
+      "en": "Our Technologies"
+    },
+    "subtitle": {
+      "cs": "Investujeme do nejnovějších strojů pro zajištění maximální kvality a efektivity",
+      "de": "Wir investieren in modernste Maschinen für höchste Qualität und Effizienz",
+      "en": "We invest in the latest machines to ensure maximum quality and efficiency"
+    },
+    "cutting_centers": {
+      "title": {
+        "cs": "Pálicí centra",
+        "de": "Brennzentren",
+        "en": "Cutting Centers"
+      }
+    },
+    "bending_machines": {
+      "title": {
+        "cs": "Ohraňovací lisy",
+        "en": "Bending Machines",
+        "de": "Biegemaschinen"
+      }
+    },
+    "machining": {
+      "title": {
+        "cs": "Obrobna",
+        "en": "Machining",
+        "de": "Maschinelle Bearbeitung"
+      }
+    },
+    "welding": {
+      "title": {
+        "cs": "Svářečky",
+        "en": "Welding Machines",
+        "de": "Schweißgeräte"
+      }
+    },
+    "cranes": {
+      "title": {
+        "cs": "Jeřáby",
+        "en": "Cranes",
+        "de": "Kräne"
+      }
+    },
+    "production": {
+      "title": {
+        "cs": "Vyráběné svařence",
+        "en": "Manufactured Weldments",
+        "de": "Hergestellte Schweißkonstruktionen"
+      }
+    },
+    "cooperation": {
+      "title": {
+        "cs": "Kooperační služby",
+        "en": "Cooperation Services",
+        "de": "Kooperationsdienstleistungen"
+      },
+      "items": {
+        "blasting": {
+          "cs": "Tryskání",
+          "en": "Shot blasting",
+          "de": "Strahlen"
+        },
+        "galvanizing": {
+          "cs": "Galvanické zinkování",
+          "en": "Electro-galvanizing",
+          "de": "Galvanische Verzinkung"
+        },
+        "hot_dip": {
+          "cs": "Žárové zinkování",
+          "en": "Hot-dip galvanizing",
+          "de": "Feuerverzinkung"
+        },
+        "powder": {
+          "cs": "Práškové lakování",
+          "en": "Powder coating",
+          "de": "Pulverbeschichtung"
+        },
+        "wet": {
+          "cs": "Mokrá barva",
+          "en": "Wet paint",
+          "de": "Nasslack"
+        }
+      }
+    },
+    "equipment": {
+      "cutting_centers": {
+        "cs": "Pálicí centra",
+        "de": "Brennzentren",
+        "en": "Cutting Centers"
+      },
+      "machining_shop": {
+        "cs": "Obrobna",
+        "de": "Werkstatt",
+        "en": "Machine Shop"
+      },
+      "welding_machines": {
+        "cs": "Svářečky",
+        "de": "Schweißgeräte",
+        "en": "Welding Machines"
+      },
+      "cranes": {
+        "cs": "Jeřáby",
+        "de": "Kräne",
+        "en": "Cranes"
+      },
+      "durma": {
+        "cs": "DURMA CNC HAP 60400",
+        "en": "DURMA CNC HAP 60400",
+        "de": "DURMA CNC HAP 60400"
+      },
+      "vartek": {
+        "cs": "VARTEK Accura Form 4100x400",
+        "en": "VARTEK Accura Form 4100x400",
+        "de": "VARTEK Accura Form 4100x400"
+      },
+      "bending_machines": {
+        "cs": "Ohraňovací lisy",
+        "en": "Bending Machines",
+        "de": "Biegemaschinen"
+      }
+    },
+    "specs": {
+      "power": {
+        "cs": "Výkon",
+        "en": "Power",
+        "de": "Leistung"
+      },
+      "max_sheet": {
+        "cs": "Max. velikost plechu",
+        "en": "Max. sheet size",
+        "de": "Max. Blechgröße"
+      },
+      "max_thickness": {
+        "cs": "Maximální tloušťka plechu",
+        "en": "Maximum sheet thickness",
+        "de": "Maximale Blechstärke"
+      },
+      "technical_specs": {
+        "cs": "Technické možnosti (PDF)",
+        "en": "Technical Specifications (PDF)",
+        "de": "Technische Daten (PDF)"
+      }
+    },
+    "technical": {
+      "power": {
+        "cs": "Výkon",
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "max_length": {
+        "cs": "Max. délka ohýbání",
+        "en": "Max. bending length",
+        "de": "Max. Biegelänge"
+      },
+      "max_pressure": {
+        "cs": "Max. tlak",
+        "en": "Max. pressure",
+        "de": "Max. Druck"
+      },
+      "materials": {
+        "steel": {
+          "cs": "S355",
+          "de": "S355 Stahl",
+          "en": "S355 Steel"
+        },
+        "stainless": {
+          "cs": "Nerez",
+          "de": "Edelstahl",
+          "en": "Stainless Steel"
+        },
+        "aluminum": {
+          "cs": "Hliník",
+          "de": "Aluminium",
+          "en": "Aluminum"
+        }
+      },
+      "equipment": {
+        "lathe": {
+          "cs": "Soustruh SU32 + digitální odjíždění",
+          "de": "Drehmaschine SU32 + digitale Anzeige",
+          "en": "Lathe SU32 + digital readout"
+        },
+        "mill": {
+          "cs": "Frézka FGS 32/40",
+          "de": "Fräsmaschine FGS 32/40",
+          "en": "Milling machine FGS 32/40"
+        },
+        "drill": {
+          "cs": "Sloupová vrtačka VR6A",
+          "de": "Säulenbohrmaschine VR6A",
+          "en": "Column drill VR6A"
+        },
+        "saw": {
+          "cs": "Pásová pila",
+          "de": "Bandsäge",
+          "en": "Band saw"
+        }
+      },
+      "crane_capacity": {
+        "cs": "Mostový jeřáb nosnost",
+        "en": "Bridge crane capacity",
+        "de": "Brückenkran Tragfähigkeit"
+      },
+      "crane_5000": {
+        "cs": "5 000kg",
+        "en": "5,000kg",
+        "de": "5.000kg"
+      },
+      "crane_3000": {
+        "cs": "3 000kg",
+        "en": "3,000kg",
+        "de": "3.000kg"
+      },
+      "crane_2500": {
+        "cs": "2 500kg",
+        "en": "2,500kg",
+        "de": "2.500kg"
+      },
+      "crane_2000": {
+        "cs": "2 000kg",
+        "en": "2,000kg",
+        "de": "2.000kg"
+      },
+      "technical_specs": {
+        "cs": "Technické možnosti (PDF)",
+        "en": "Technical Specifications (PDF)",
+        "de": "Technische Spezifikationen (PDF)"
+      }
+    }
+  },
+  "certifications": {
+    "title": {
+      "cs": "Certifikace",
+      "en": "Certifications",
+      "de": "Zertifizierungen"
+    },
+    "subtitle": {
+      "cs": "Naše kvalita je podložena řadou certifikací a osvědčení",
+      "en": "Our quality is supported by numerous certifications",
+      "de": "Unsere Qualität wird durch zahlreiche Zertifizierungen belegt"
+    },
+    "details": {
+      "iso9001": {
+        "title": {
+          "cs": "Certifikát ČSN EN ISO 9001:2016",
+          "en": "Certificate EN ISO 9001:2016",
+          "de": "Zertifikat EN ISO 9001:2016"
+        },
+        "description": {
+          "cs": "Systém managementu kvality - tento certifikát potvrzuje, že naše společnost má zavedený a udržovaný systém managementu kvality.",
+          "en": "Quality Management System - this certificate confirms that our company has implemented and maintains a quality management system.",
+          "de": "Qualitätsmanagementsystem - dieses Zertifikat bestätigt, dass unser Unternehmen ein Qualitätsmanagementsystem eingeführt hat und aufrechterhält."
+        },
+        "view": {
+          "cs": "Zobrazit",
+          "en": "View",
+          "de": "Ansehen"
+        },
+        "points": {
+          "process": {
+            "cs": "Systematické řízení procesů",
+            "en": "Systematic process management",
+            "de": "Systematisches Prozessmanagement"
+          },
+          "audits": {
+            "cs": "Pravidelné audity a kontroly",
+            "en": "Regular audits and inspections",
+            "de": "Regelmäßige Audits und Kontrollen"
+          }
+        }
+      },
+      "iso3834": {
+        "title": {
+          "cs": "Certifikát ČSN EN ISO 3834-2:2022",
+          "en": "Certificate EN ISO 3834-2:2022",
+          "de": "Zertifikat EN ISO 3834-2:2022"
+        },
+        "description": {
+          "cs": "Požadavky na jakost při tavném svařování - certifikát potvrzuje splnění vyšších požadavků na jakost při svařování.",
+          "en": "Quality requirements for fusion welding - certificate confirms compliance with higher quality requirements for welding.",
+          "de": "Qualitätsanforderungen für das Schmelzschweißen - Zertifikat bestätigt die Erfüllung höherer Qualitätsanforderungen beim Schweißen."
+        },
+        "points": {
+          "procedures": {
+            "cs": "Kvalifikované svářečské postupy",
+            "en": "Qualified welding procedures",
+            "de": "Qualifizierte Schweißverfahren"
+          },
+          "quality": {
+            "cs": "Kontrola kvality svařování",
+            "en": "Welding quality control",
+            "de": "Schweißqualitätskontrolle"
+          }
+        }
+      },
+      "en1090_2": {
+        "title": {
+          "cs": "Certifikát ČSN EN 1090-2 Tř.EXC3",
+          "en": "Certificate EN 1090-2 Class EXC3",
+          "de": "Zertifikat EN 1090-2 Klasse EXC3"
+        },
+        "description": {
+          "cs": "Provádění ocelových konstrukcí - certifikát třídy EXC3 potvrzuje naši způsobilost k výrobě náročných konstrukcí.",
+          "en": "Execution of steel structures - EXC3 class certificate confirms our capability to manufacture complex structures.",
+          "de": "Ausführung von Stahlkonstruktionen - EXC3-Klassenzertifikat bestätigt unsere Fähigkeit zur Herstellung komplexer Konstruktionen."
+        },
+        "points": {
+          "quality": {
+            "cs": "Vysoké nároky na kvalitu",
+            "en": "High quality requirements",
+            "de": "Hohe Qualitätsanforderungen"
+          },
+          "technical": {
+            "cs": "Přísné technické požadavky",
+            "en": "Strict technical requirements",
+            "de": "Strenge technische Anforderungen"
+          }
+        }
+      },
+      "en1090_1": {
+        "title": {
+          "cs": "Certifikát EN 1090-1:2009+A1:2-11",
+          "en": "Certificate EN 1090-1:2009+A1:2-11",
+          "de": "Zertifikat EN 1090-1:2009+A1:2-11"
+        },
+        "description": {
+          "cs": "Systém řízení výroby - certifikát potvrzuje shodu výrobního procesu s evropskými normami pro ocelové konstrukce.",
+          "en": "Production control system - certificate confirms compliance of the production process with European standards for steel structures.",
+          "de": "Produktionskontrollsystem - Zertifikat bestätigt die Übereinstimmung des Produktionsprozesses mit europäischen Normen für Stahlkonstruktionen."
+        },
+        "points": {
+          "procedures": {
+            "cs": "Standardizované postupy",
+            "en": "Standardized procedures",
+            "de": "Standardisierte Verfahren"
+          },
+          "control": {
+            "cs": "Kontrola procesů",
+            "en": "Process control",
+            "de": "Prozesskontrolle"
+          }
+        }
+      }
+    }
+  },
+  "eu_projects": {
+    "title": {
+      "cs": "Dotace EU",
+      "en": "EU Grants",
+      "de": "EU-Förderungen"
+    },
+    "description": {
+      "cs": "V roce 2019 firma C10D s.r.o. čerpala dotaci na projekt \"Optimalizace náprav přívěsů nákladních automobilů\", který byl spolufinancován Evropskou unií. Hlavním cílem projektu bylo vytvoření počítačového modelu náprav na základě zpracování snímků pořízených přesným 3D skenerem.",
+      "en": "In 2019, C10D s.r.o. received a grant for the project \"Optimization of truck trailer axles\", which was co-financed by the European Union. The main goal of the project was to create a computer model of axles based on processing images taken by a precise 3D scanner.",
+      "de": "Im Jahr 2019 erhielt C10D s.r.o. eine Förderung für das Projekt \"Optimierung von LKW-Anhängerachsen\", das von der Europäischen Union kofinanziert wurde. Hauptziel des Projekts war die Erstellung eines Computermodells von Achsen auf Basis der Verarbeitung von Bildern, die mit einem präzisen 3D-Scanner aufgenommen wurden."
+    },
+    "more_info": {
+      "cs": "Více informací",
+      "en": "More Information",
+      "de": "Weitere Informationen"
+    }
+  },
+  "gallery": {
+    "title": {
+      "cs": "Naše práce",
+      "en": "Our Work",
+      "de": "Unsere Arbeit"
+    },
+    "subtitle": {
+      "cs": "Ukázky realizovaných projektů",
+      "en": "Examples of completed projects",
+      "de": "Beispiele realisierter Projekte"
+    },
+    "viewAll": {
+      "cs": "Zobrazit celou galerii",
+      "en": "View Full Gallery",
+      "de": "Komplette Galerie anzeigen"
+    },
+    "filters": {
+      "all": {
+        "cs": "Všechny",
+        "en": "All",
+        "de": "Alle"
+      },
+      "laser_cutting": {
+        "cs": "Laserové řezání",
+        "en": "Laser Cutting",
+        "de": "Laserschneiden"
+      },
+      "bending": {
+        "cs": "Ohraňovací lisy",
+        "en": "Bending Machines",
+        "de": "Biegemaschinen"
+      },
+      "machining": {
+        "cs": "Obráběcí stroje",
+        "en": "Machine Tools",
+        "de": "Werkzeugmaschinen"
+      },
+      "welding": {
+        "cs": "Svařování",
+        "en": "Welding",
+        "de": "Schweißen"
+      },
+      "drilling": {
+        "cs": "Vrtání",
+        "en": "Drilling",
+        "de": "Bohren"
+      },
+      "premises": {
+        "cs": "Areál",
+        "en": "Premises",
+        "de": "Gelände"
+      }
+    },
+    "items": {
+      "laser_cutting": {
+        "title": {
+          "cs": "Laserové řezání",
+          "en": "Laser Cutting",
+          "de": "Laserschneiden"
+        },
+        "description": {
+          "cs": "Precizní zpracování kovů",
+          "en": "Precision metal processing",
+          "de": "Präzise Metallbearbeitung"
+        }
+      },
+      "bending": {
+        "title": {
+          "cs": "CNC Ohraňování",
+          "en": "CNC Bending",
+          "de": "CNC-Biegen"
+        },
+        "description": {
+          "cs": "Přesné ohýbání plechů",
+          "en": "Precise sheet metal bending",
+          "de": "Präzises Metallbiegen"
+        }
+      },
+      "welding": {
+        "title": {
+          "cs": "Svařování",
+          "en": "Welding",
+          "de": "Schweißen"
+        },
+        "description": {
+          "cs": "Profesionální svářečské práce",
+          "en": "Professional welding work",
+          "de": "Professionelle Schweißarbeiten"
+        }
+      },
+      "machining": {
+        "title": {
+          "cs": "Třískové obrábění",
+          "en": "Machining",
+          "de": "Zerspannung"
+        },
+        "description": {
+          "cs": "Přesné strojní obrábění",
+          "en": "Precise machine processing",
+          "de": "Präzise maschinelle Bearbeitung"
+        }
+      }
+    },
+    "page": {
+      "title": {
+        "cs": "Galerie | C10D s.r.o.",
+        "en": "Gallery | C10D s.r.o.",
+        "de": "Galerie | C10D s.r.o."
+      },
+      "description": {
+        "cs": "Prohlédněte si naše projekty a realizace v oblasti průmyslové kovovýroby a laserového řezání.",
+        "en": "View our projects and implementations in industrial metal manufacturing and laser cutting.",
+        "de": "Sehen Sie sich unsere Projekte und Umsetzungen in der industriellen Metallverarbeitung und beim Laserschneiden an."
+      },
+      "heading": {
+        "cs": "Galerie našich projektů",
+        "en": "Gallery of Our Projects",
+        "de": "Galerie unserer Projekte"
+      },
+      "subheading": {
+        "cs": "Vyberte si kategorii, kterou chcete zobrazit",
+        "en": "Select a category to display",
+        "de": "Wählen Sie eine Kategorie zur Anzeige"
+      }
+    },
+    "modal": {
+      "close": {
+        "cs": "Zavřít galerii",
+        "en": "Close gallery",
+        "de": "Galerie schließen"
+      },
+      "previous": {
+        "cs": "Předchozí obrázek",
+        "en": "Previous image",
+        "de": "Vorheriges Bild"
+      },
+      "next": {
+        "cs": "Další obrázek",
+        "en": "Next image",
+        "de": "Nächstes Bild"
+      }
+    }
+  },
+  "career": {
+    "title": {
+      "cs": "Kariéra",
+      "de": "Karriere",
+      "en": "Career"
+    },
+    "subtitle": {
+      "cs": "Hledáme nové kolegy do našeho týmu. Nabízíme stabilní práci v moderní společnosti s řadou benefitů.",
+      "de": "Werden Sie Teil unseres professionellen Teams",
+      "en": "Join our team of professionals"
+    },
+    "open_positions": {
+      "cs": "Aktuálně otevřené pozice",
+      "en": "Currently Open Positions",
+      "de": "Aktuell offene Stellen"
+    },
+    "viewAll": {
+      "cs": "Zobrazit všechny pozice",
+      "en": "View all positions",
+      "de": "Alle Positionen anzeigen"
+    },
+    "positions": {
+      "welder": {
+        "cs": "Svářeči/Stehaři",
+        "de": "Schweißer/Vormonteure",
+        "en": "Welders/Fitters"
+      },
+      "cnc_operator": {
+        "cs": "Obsluha CNC laseru",
+        "de": "CNC-Laserbediener",
+        "en": "CNC Laser Operator"
+      },
+      "machinist": {
+        "cs": "Soustružník/Frézař",
+        "de": "Dreher/Fräser",
+        "en": "Turner/Miller"
+      }
+    },
+    "benefits": {
+      "title": {
+        "cs": "Benefity",
+        "en": "Benefits",
+        "de": "Vorteile"
+      },
+      "thirteenth_salary": {
+        "cs": "13. plat",
+        "en": "13th Salary",
+        "de": "13. Monatsgehalt"
+      },
+      "bonuses": {
+        "cs": "Prémie/Bonusy",
+        "en": "Bonuses/Premiums",
+        "de": "Prämien/Boni"
+      },
+      "meal_allowance": {
+        "cs": "Stravenkový paušál",
+        "en": "Meal Allowance",
+        "de": "Essenszuschuss"
+      }
+    },
+    "page": {
+      "title": {
+        "cs": "Kariéra | C10D s.r.o.",
+        "en": "Career | C10D s.r.o.",
+        "de": "Karriere | C10D s.r.o."
+      },
+      "description": {
+        "cs": "Připojte se k našemu týmu. Nabízíme zajímavé pracovní příležitosti v oblasti průmyslové kovovýroby.",
+        "en": "Join our team. We offer interesting job opportunities in industrial metal manufacturing.",
+        "de": "Werden Sie Teil unseres Teams. Wir bieten interessante Jobmöglichkeiten in der industriellen Metallverarbeitung."
+      }
+    },
+    "salary": {
+      "welder": {
+        "cs": "Nástupní plat od 40 000 Kč/měsíc",
+        "en": "Starting salary from 40,000 CZK/month",
+        "de": "Einstiegsgehalt ab 40.000 CZK/Monat"
+      }
+    },
+    "requirements": {
+      "title": {
+        "cs": "Požadavky:",
+        "en": "Requirements:",
+        "de": "Anforderungen:"
+      },
+      "education": {
+        "cs": "vyučení v oboru",
+        "en": "vocational training in the field",
+        "de": "Berufsausbildung im Fachbereich"
+      },
+      "experience": {
+        "cs": "praxe nutná",
+        "en": "experience required",
+        "de": "Erfahrung erforderlich"
+      },
+      "documentation": {
+        "cs": "výborná znalost čtení výkresové dokumentace",
+        "en": "excellent knowledge of reading technical drawings",
+        "de": "ausgezeichnete Kenntnisse im Lesen technischer Zeichnungen"
+      },
+      "crane_license": {
+        "cs": "jeřábnický průkaz – podmínkou (součástí náplně práce je manipulace s jeřábem)",
+        "en": "crane operator license – required (crane operation is part of the job)",
+        "de": "Kranführerschein – erforderlich (Kranbedienung ist Teil der Arbeit)"
+      },
+      "forklift_license": {
+        "cs": "platný průkaz řízení VZV – výhodou",
+        "en": "valid forklift license – advantage",
+        "de": "gültiger Gabelstaplerschein – von Vorteil"
+      },
+      "personal": {
+        "cs": "samostatnost, pečlivost, zodpovědnost a aktivní přístup k práci",
+        "en": "independence, diligence, responsibility and proactive approach to work",
+        "de": "Selbstständigkeit, Sorgfalt, Verantwortungsbewusstsein und proaktive Arbeitseinstellung"
+      }
+    },
+    "buttons": {
+      "view_position": {
+        "cs": "Zobrazit popis pozice",
+        "en": "View Position Details",
+        "de": "Stellenbeschreibung anzeigen"
+      }
+    },
+    "all_positions": {
+      "cs": "Zobrazit všechny pozice",
+      "en": "View all positions",
+      "de": "Alle Positionen anzeigen"
+    }
+  },
+  "contact": {
+    "title": {
+      "cs": "Kontaktní informace",
+      "en": "Contact Information",
+      "de": "Kontaktinformationen"
+    },
+    "subtitle": {
+      "cs": "Jsme tu pro vás. Neváhejte nás kontaktovat.",
+      "en": "We are here for you. Don't hesitate to contact us.",
+      "de": "Wir sind für Sie da. Zögern Sie nicht, uns zu kontaktieren."
+    },
+    "hours": {
+      "cs": "Po-Pá: 7:00 - 15:30",
+      "de": "Mo–Fr: 7:00 – 15:30",
+      "en": "Mon–Fri: 7:00 AM – 3:30 PM"
+    },
+    "email": {
+      "cs": "info@c10d.cz",
+      "en": "info@c10d.cz",
+      "de": "info@c10d.cz"
+    },
+    "more_info": {
+      "cs": "Více kontaktních informací",
+      "de": "Weitere Kontaktinformationen",
+      "en": "More contact information"
+    },
+    "address": {
+      "cs": "Klimkovice 742 83",
+      "en": "Klimkovice 742 83",
+      "de": "Klimkovice 742 83"
+    },
+    "map": {
+      "google": {
+        "cs": "Otevřít v Google Maps",
+        "en": "Open in Google Maps",
+        "de": "In Google Maps öffnen"
+      },
+      "mapy": {
+        "cs": "Otevřít v Mapy.cz",
+        "en": "Open in Mapy.cz",
+        "de": "In Mapy.cz öffnen"
+      }
+    },
+    "transportation": {
+      "title": {
+        "cs": "Doprava",
+        "en": "Transportation",
+        "de": "Anfahrt"
+      },
+      "description": {
+        "cs": "Provozovna se nachází v průmyslové zóně Nového Jičína. Příjezd je možný po silnici I/57, odbočka na ulici Rybníčky.",
+        "en": "The facility is located in the industrial zone of Nový Jičín. Access is possible via road I/57, turn onto Rybníčky street.",
+        "de": "Der Betrieb befindet sich im Industriegebiet von Nový Jičín. Die Zufahrt ist über die Straße I/57 möglich, Abzweigung zur Rybníčky Straße."
+      }
+    },
+    "parking": {
+      "title": {
+        "cs": "Parkování",
+        "en": "Parking",
+        "de": "Parken"
+      },
+      "description": {
+        "cs": "Parkování je k dispozici přímo před budovou společnosti.",
+        "en": "Parking is available directly in front of the company building.",
+        "de": "Parkplätze stehen direkt vor dem Firmengebäude zur Verfügung."
+      }
+    },
+    "page": {
+      "title": {
+        "cs": "Kontakt | C10D s.r.o.",
+        "en": "Contact | C10D s.r.o.",
+        "de": "Kontakt | C10D s.r.o."
+      },
+      "description": {
+        "cs": "Kontaktní informace společnosti C10D s.r.o. - specialisté na laserové řezání a zpracování kovů.",
+        "en": "Contact information for C10D s.r.o. - specialists in laser cutting and metal processing.",
+        "de": "Kontaktinformationen für C10D s.r.o. - Spezialisten für Laserschneiden und Metallverarbeitung."
+      }
+    },
+    "info": {
+      "title": {
+        "cs": "Kontaktní údaje",
+        "en": "Contact Information",
+        "de": "Kontaktinformationen"
+      },
+      "headquarters": {
+        "cs": "Sídlo firmy",
+        "en": "Company Headquarters",
+        "de": "Firmensitz"
+      },
+      "facility": {
+        "cs": "Provozovna",
+        "en": "Operating Facility",
+        "de": "Betriebsstätte"
+      },
+      "billing": {
+        "cs": "Fakturační údaje",
+        "en": "Billing Information",
+        "de": "Rechnungsinformationen"
+      },
+      "ico": {
+        "cs": "IČO: 12345678",
+        "en": "Company ID: 12345678",
+        "de": "Firmen-ID: 12345678"
+      },
+      "dic": {
+        "cs": "DIČ: CZ12345678",
+        "en": "VAT ID: CZ12345678",
+        "de": "USt-IdNr.: CZ12345678"
+      },
+      "bank": {
+        "cs": "Bankovní účet: 123456789/0100",
+        "en": "Bank Account: 123456789/0100",
+        "de": "Bankkonto: 123456789/0100"
+      },
+      "company_name": {
+        "cs": "C10D s.r.o.",
+        "en": "C10D s.r.o.",
+        "de": "C10D s.r.o."
+      },
+      "street": {
+        "cs": "28.října 141",
+        "en": "28.října 141",
+        "de": "28.října 141"
+      },
+      "city": {
+        "cs": "Klimkovice 742 83",
+        "en": "Klimkovice 742 83",
+        "de": "Klimkovice 742 83"
+      },
+      "facility_street": {
+        "cs": "Rybníčky 2285/31",
+        "en": "Rybníčky 2285/31",
+        "de": "Rybníčky 2285/31"
+      },
+      "facility_city": {
+        "cs": "Nový Jičín 741 01",
+        "en": "Nový Jičín 741 01",
+        "de": "Nový Jičín 741 01"
+      }
+    },
+    "departments": {
+      "title": {
+        "cs": "Kontakty na oddělení",
+        "en": "Department Contacts",
+        "de": "Abteilungskontakte"
+      },
+      "ceo": {
+        "cs": "Jednatel společnosti",
+        "en": "CEO",
+        "de": "Geschäftsführer"
+      },
+      "ceo_name": {
+        "cs": "Václav Lichovník",
+        "en": "Václav Lichovník",
+        "de": "Václav Lichovník"
+      },
+      "ceo_email": {
+        "cs": "vaclav.lichovnik@c10d.cz",
+        "en": "vaclav.lichovnik@c10d.cz",
+        "de": "vaclav.lichovnik@c10d.cz"
+      },
+      "director": {
+        "cs": "Ředitel společnosti",
+        "en": "Company Director",
+        "de": "Direktor"
+      },
+      "director_name": {
+        "cs": "Lubomír Helísek",
+        "en": "Lubomír Helísek",
+        "de": "Lubomír Helísek"
+      },
+      "director_email": {
+        "cs": "lubomir.helisek@c10d.cz",
+        "en": "lubomir.helisek@c10d.cz",
+        "de": "lubomir.helisek@c10d.cz"
+      },
+      "director_phone": {
+        "cs": "+420 777 916 724",
+        "en": "+420 777 916 724",
+        "de": "+420 777 916 724"
+      },
+      "sales": {
+        "cs": "Obchodní oddělení",
+        "en": "Sales Department",
+        "de": "Vertriebsabteilung"
+      },
+      "technical": {
+        "cs": "Technické oddělení",
+        "en": "Technical Department",
+        "de": "Technische Abteilung"
+      },
+      "quality": {
+        "cs": "Oddělení kvality",
+        "en": "Quality Department",
+        "de": "Qualitätsabteilung"
+      },
+      "economic": {
+        "cs": "Ekonomické oddělení",
+        "en": "Economic Department",
+        "de": "Wirtschaftsabteilung"
+      }
+    },
+    "social": {
+      "title": {
+        "cs": "Sociální sítě",
+        "en": "Social Media",
+        "de": "Soziale Medien"
+      },
+      "facebook": {
+        "cs": "Sledujte nás na Facebooku",
+        "en": "Follow us on Facebook",
+        "de": "Folgen Sie uns auf Facebook"
+      },
+      "linkedin": {
+        "cs": "Sledujte nás na LinkedIn",
+        "en": "Follow us on LinkedIn",
+        "de": "Folgen Sie uns auf LinkedIn"
+      }
+    },
+    "phone": {
+      "cs": "+420 123 456 789",
+      "en": "+420 123 456 789",
+      "de": "+420 123 456 789"
+    }
+  },
+  "footer": {
+    "description": {
+      "cs": "Specialisté na laserové řezání a zpracování plechů",
+      "en": "Specialists in laser cutting and sheet metal processing",
+      "de": "Spezialisten für Laserschneiden und Blechbearbeitung"
+    },
+    "contact": {
+      "title": {
+        "cs": "Kontakt",
+        "en": "Contact",
+        "de": "Kontakt"
+      }
+    },
+    "menu": {
+      "title": {
+        "cs": "Menu",
+        "en": "Menu",
+        "de": "Menü"
+      }
+    },
+    "copyright": {
+      "cs": "Všechna práva vyhrazena.",
+      "en": "All rights reserved.",
+      "de": "Alle Rechte vorbehalten."
+    },
+    "back_to_top": {
+      "cs": "Zpět nahoru",
+      "en": "Back to top",
+      "de": "Nach oben"
+    }
+  },
+  "images": {
+    "logo": {
+      "cs": "C10D s.r.o. logo",
+      "en": "C10D s.r.o. logo",
+      "de": "C10D s.r.o. Logo"
+    },
+    "flags": {
+      "cs": {
+        "cs": "Čeština",
+        "en": "Czech",
+        "de": "Tschechisch"
+      },
+      "en": {
+        "cs": "Angličtina",
+        "en": "English",
+        "de": "Englisch"
+      },
+      "de": {
+        "cs": "Němčina",
+        "en": "German",
+        "de": "Deutsch"
+      }
+    },
+    "eu": {
+      "cs": "Evropská unie - Evropský fond pro regionální rozvoj",
+      "en": "European Union - European Regional Development Fund",
+      "de": "Europäische Union - Europäischer Fonds für regionale Entwicklung"
+    },
+    "mpo": {
+      "cs": "Ministerstvo průmyslu a obchodu",
+      "en": "Ministry of Industry and Trade",
+      "de": "Ministerium für Industrie und Handel"
+    }
+  },
+  "materials": {
+    "steel": {
+      "cs": "S355",
+      "en": "S355 Steel",
+      "de": "S355 Stahl"
+    },
+    "stainless": {
+      "cs": "Nerez",
+      "en": "Stainless Steel",
+      "de": "Edelstahl"
+    },
+    "aluminum": {
+      "cs": "Hliník",
+      "en": "Aluminum",
+      "de": "Aluminium"
+    }
+  },
+  "general": {
+    "technical_specs": {
+      "cs": "Technické možnosti (PDF)",
+      "en": "Technical Specifications (PDF)",
+      "de": "Technische Daten (PDF)"
+    }
+  }
+} 

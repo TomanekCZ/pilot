@@ -8,7 +8,9 @@
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "build:css": "tailwindcss -i ./css/tailwind.css -o ./css/tailwind.output.css --minify",
+    "watch:css": "tailwindcss -i ./css/tailwind.css -o ./css/tailwind.output.css --watch"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -75,6 +77,7 @@
     "zod-validation-error": "^3.4.0"
   },
   "devDependencies": {
+    "@agentdeskai/browser-tools-mcp": "^1.2.0",
     "@replit/vite-plugin-cartographer": "^0.0.11",
     "@replit/vite-plugin-runtime-error-modal": "^0.0.3",
     "@tailwindcss/typography": "^0.5.15",
@@ -103,5 +106,13 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "description": ""
+  "description": "Moderní webové stránky pro společnost C10D s.r.o., specializující se na průmyslovou kovovýrobu a laserové řezání.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomanekCZ/c10d-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TomanekCZ/c10d-web/issues"
+  },
+  "homepage": "https://github.com/TomanekCZ/c10d-web#readme"
 }
